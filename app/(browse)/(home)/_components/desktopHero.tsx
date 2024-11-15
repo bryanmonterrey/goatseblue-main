@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
 import AudioDistortionImage from './audioDistort';
 import LocomotiveScroll from 'locomotive-scroll';
+import AudioReactive3D from './audioDistort';
+
 import JupiterTerminal from '@/components/jupTerm';
 
 if (typeof window !== 'undefined') {
@@ -185,10 +187,7 @@ const HeroSection = () => {
 
           <div className="absolute inset-0 flex items-center justify-center z-[1025]">
             <div className="relative pt-24 w-full h-full flex items-center justify-center audio-distortion-container">
-              <AudioDistortionImage 
-                imageUrl="/banksygoat.svg"
-                audioUrl="/audio/Dark.mp3"
-              />
+            <AudioReactive3D audioUrl="/fred.mp3" />
             </div>
           </div>
 
