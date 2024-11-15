@@ -99,45 +99,45 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="bg-black border border-white">
         <DialogHeader>
-          <DialogTitle className="text-white font-goatse">Reply to Post</DialogTitle>
+          <DialogTitle className="text-white font-inter">Reply to Post</DialogTitle>
         </DialogHeader>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-white text-black p-2 text-sm font-goatse">Name</label>
+            <label className="bg-white text-black p-2 text-sm font-inter">Name</label>
             <Input
 
               type="text" 
               name="name" 
               required 
-              className="max-w-md font-goatse"
+              className="max-w-md font-inter"
             />
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-white text-black p-2 text-sm font-goatse">Subject</label>
+            <label className="bg-white text-black p-2 text-sm font-inter">Subject</label>
             <Input 
               type="text" 
               name="subject" 
-              className="max-w-md font-goatse"
+              className="max-w-md font-inter"
             />
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-start">
-            <label className="bg-white text-black p-2 text-sm font-goatse">Comment</label>
+            <label className="bg-white text-black p-2 text-sm font-inter">Comment</label>
             <Textarea 
               name="comment" 
               required
-              className="min-h-[100px] font-goatse"
+              className="min-h-[100px] font-inter"
             />
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-white text-black p-2 text-sm font-goatse">File</label>
+            <label className="bg-white text-black p-2 text-sm font-inter">File</label>
             <Input 
               type="file" 
               name="file"
-              className="max-w-md font-goatse"
+              className="max-w-md font-inter"
               accept="image/*"
               onChange={(e) => {
                 const file = e.target.files?.[0]
@@ -158,15 +158,15 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-white text-black p-2 text-sm font-goatse">Password</label>
+            <label className="bg-white text-black p-2 text-sm font-inter">Password</label>
             <div className="flex gap-2 items-center max-w-md">
               <Input 
                 type="password" 
                 name="password"
                 required
-                className="max-w-[200px] font-goatse"
+                className="max-w-[200px] font-inter"
               />
-              <span className="text-sm text-gray-500 font-goatse">(For deletion.)</span>
+              <span className="text-sm text-gray-500 font-inter">(For deletion.)</span>
             </div>
           </div>
 
@@ -175,14 +175,14 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
               type="button" 
               variant="outline"
               onClick={onClose}
-              className="border-white text-black font-goatse rounded-none px-2"
+              className="border-white text-black font-inter rounded-none px-2"
             >
               Cancel
             </Button>
             <Button 
               type="submit"
               disabled={submitting}
-              className="bg-white text-black font-goatse rounded-none px-2"
+              className="bg-white text-black font-inter rounded-none px-2"
             >
               {submitting ? 'Posting...' : 'Post Reply'}
             </Button>

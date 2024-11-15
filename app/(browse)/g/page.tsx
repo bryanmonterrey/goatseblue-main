@@ -94,7 +94,7 @@ export default function Home() {
     <main className="max-w-7xl mx-auto ">
     <div className="max-w-lg mx-auto p-4">
     <div className='absolute right-3 top-3 mb-6'>
-        <Button className='border border-white py-1 px-4 rounded-none text-white hover:text-white hover:italic font-goatse mx-auto'>
+        <Button className='border border-white py-1 px-4 rounded-none text-white hover:text-white hover:italic font-inter mx-auto'>
             <Link href="https://www.goatsesingularity.vip/">
                 back to Home
             </Link>
@@ -107,46 +107,46 @@ export default function Home() {
           alt="Goatse Singularity Board"
           className="w-96 h-32 p-4 object-contain mx-auto"
         />
-        <h1 className="text-2xl font-goatse text-white mb-2 mx-auto">/g/ - Goatse Singularity Board</h1>
-        <p className="text-sm font-goatse mx-auto">Enter the Goatse Singularity.</p>
+        <h1 className="text-2xl font-inter text-white mb-2 mx-auto">/g/ - Goatse Singularity Board</h1>
+        <p className="text-sm font-inter mx-auto">Enter the Goatse Singularity.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-goatse">Name</label>
+          <label className="bg-white text-black p-2 text-sm font-inter">Name</label>
           <Input 
             type="text" 
             name="name" 
             required 
-            className="max-w-md font-goatse border-white"
+            className="max-w-md font-inter border-white"
           />
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-goatse">Subject</label>
+          <label className="bg-white text-black p-2 text-sm font-inter">Subject</label>
           <div className="flex gap-2 items-center max-w-md">
-            <Input type="text" name="subject" className='font-goatse border-white' />
-            <Button type="button" variant="outline" size="sm" className='rounded-none text-black font-goatse'>
+            <Input type="text" name="subject" className='font-inter border-white' />
+            <Button type="button" variant="outline" size="sm" className='rounded-none text-black font-inter'>
               New Topic
             </Button>
           </div>
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-start">
-          <label className="bg-white text-black p-2 text-sm font-goatse">Comment</label>
+          <label className="bg-white text-black p-2 text-sm font-inter">Comment</label>
           <Textarea 
             name="comment" 
             required
-            className="min-h-[100px] font-goatse resize-none rounded-none border-white"
+            className="min-h-[100px] font-inter resize-none rounded-none border-white"
           />
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-goatse">File</label>
+          <label className="bg-white text-black p-2 text-sm font-inter">File</label>
           <Input 
             type="file" 
             name="file"
-            className="max-w-md font-goatse border-white hover:cursor-pointer"
+            className="max-w-md font-inter border-white hover:cursor-pointer"
             accept="image/*" // Add this to restrict to images only
             onChange={(e) => {
                 // Optional: Add client-side file validation
@@ -168,22 +168,22 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-goatse">Password</label>
+          <label className="bg-white text-black p-2 text-sm font-inter">Password</label>
           <div className="flex gap-2 items-center max-w-md">
             <Input 
               type="password" 
               name="password"
               placeholder='N)L$Ko$r'
               required
-              className="max-w-[200px] font-goatse border-white placeholder:text-gray-500"
+              className="max-w-[200px] font-inter border-white placeholder:text-gray-500"
             />
-            <span className="text-sm text-gray-500 font-goatse">(For file deletion.)</span>
+            <span className="text-sm text-gray-500 font-inter">(For file deletion.)</span>
           </div>
         </div>
 
         <Button 
           type="submit" 
-          className="ml-[108px] bg-white text-black hover:italic rounded-none py-1 px-6 font-goatse"
+          className="ml-[108px] bg-white text-black hover:italic rounded-none py-1 px-6 font-inter"
           disabled={uploading}
         >
           {uploading ? 'Posting...' : 'Post'}

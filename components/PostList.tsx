@@ -130,9 +130,9 @@ export default function PostList() {
   }
 
   return (
-    <div className="space-y-4 mt-8 font-goatse mb-5">
+    <div className="space-y-4 mt-8 font-inter mb-5">
       {posts.map((post) => (
-        <Card key={post.id} className="p-4 bg-transparent border border-white rounded-none font-goatse">
+        <Card key={post.id} className="p-4 bg-transparent border border-white rounded-none font-inter">
           {post.file_path && (
             <div className="mb-2">
               <div className="text-xs text-gray-500 mb-1">
@@ -200,7 +200,7 @@ export default function PostList() {
             onClick={loadMore} 
             disabled={loadingMore}
             variant="outline"
-            className="text-white border-white hover:bg-white/20 font-goatse"
+            className="text-white border-white hover:bg-white/20 font-inter"
           >
             {loadingMore ? (
               <>

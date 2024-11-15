@@ -80,11 +80,11 @@ export function ReportPost({ postId }: ReportPostProps) {
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className='font-goatse'>Report Post</DialogTitle>
+          <DialogTitle className='font-inter'>Report Post</DialogTitle>
         </DialogHeader>
         <Card className='bg-transparent border-none'>
           <CardHeader>
-            <CardTitle className="text-sm text-white font-goatse">Why are you reporting this post?</CardTitle>
+            <CardTitle className="text-sm text-white font-inter">Why are you reporting this post?</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -92,21 +92,21 @@ export function ReportPost({ postId }: ReportPostProps) {
                 placeholder="Please provide details about why this post should be reviewed..."
                 value={reason}
                 onChange={(e) => setReason(e.target.value)}
-                className="min-h-[100px] rounded-none border-white resize-none font-goatse placeholder:font-goatse placeholder:text-white text-white"
+                className="min-h-[100px] rounded-none border-white resize-none font-inter placeholder:font-inter placeholder:text-white text-white"
               />
               <div className="flex justify-end gap-2">
                 <Button
                   variant="outline"
                   onClick={() => setIsOpen(false)}
                   disabled={isSubmitting}
-                  className='px-2 rounded-none font-goatse '
+                  className='px-2 rounded-none font-inter '
                 >
                   Cancel
                 </Button>
                 <Button
                   onClick={handleSubmit}
                   disabled={isSubmitting || !reason.trim()}
-                  className='px-2 rounded-none text-black bg-white font-goatse '
+                  className='px-2 rounded-none text-black bg-white font-inter '
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Report'}
                 </Button>

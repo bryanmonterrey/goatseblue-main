@@ -14,6 +14,7 @@ export default function NavMenu() {
         ['dexscreener', 'https://dexscreener.com/solana/bilkbpsrjxsorqxcnxox3kargpfbpekjjggeokpyhkgp'],
         ['buy', '/buy'],
         ['telegram', 'https://t.me/Goatse_Singularity'],
+        ['AI', 'https://x.com/goatse_terminal'],
         
     ]);
 

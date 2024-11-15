@@ -100,14 +100,14 @@ export function DeletePost({ postId, onDeleted }: DeletePostProps) {
       </DialogTrigger>
       <DialogContent className='rounded-none'>
         <DialogHeader>
-          <DialogTitle className='text-white font-goatse'>Delete Post</DialogTitle>
+          <DialogTitle className='text-white font-inter'>Delete Post</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="space-y-2">
             <Input
               type="password"
               placeholder="Enter deletion password"
-              className='text-white font-goatse placeholder:text-white border-white'
+              className='text-white font-inter placeholder:text-white border-white'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -115,7 +115,7 @@ export function DeletePost({ postId, onDeleted }: DeletePostProps) {
           <Button 
             onClick={handleDelete}
             disabled={isDeleting || !password}
-            className='font-goatse w-fit px-2 mx-auto bg-white rounded-none text-black hover:italic'
+            className='font-inter w-fit px-2 mx-auto bg-white rounded-none text-black hover:italic'
           >
             {isDeleting ? 'Deleting...' : 'Delete'}
           </Button>
