@@ -1,0 +1,4 @@
+/* cursor.css */
+html, * {
+    cursor: none !important;
+  }

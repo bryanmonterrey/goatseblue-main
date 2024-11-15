@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "sportesia";
+  src: url("/sportesia.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "vermin1";
+  src: url("/vermin.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "verminV";
+  src: url("/VerminVibes.otf"); 
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "goatse";
+  src: url("/goatse.otf"); 
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "courier";
+  src: url("/CourierPrime-Regular.otf"); 
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "courier";
+  src: url("/CourierPrime-Bold.otf"); 
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("/font/InterDisplay-Regular.otf"); 
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("/font/InterDisplay-Medium.otf"); 
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("/font/InterDisplay-SemiBold.otf"); 
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("/font/InterDisplay-Bold.otf"); 
+  font-weight: 700;
+}
+
+@import 'locomotive-scroll/dist/locomotive-scroll.css';
+
+:root {
+  --background: #131020;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #131020;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: #131020;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#jumbotron .title {
+  position: absolute;
+  font-family: var(--font-nohemi);
+  font-size: var(--font-size-h1);
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -3px;
+}
+
+#jumbotron .title.top-left {
+  top: -24px;
+  left: -6px;
+}
+
+#jumbotron .title.bottom-right {
+  bottom: -58px;
+  right: -2px;
+}
+
+#jumbotron .description {
+  position: absolute;
+  top: 44px;
+  right: var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+
+  font-family: var(--font-sarabun);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: right;
+}
+
+#jumbotron .description > * {
+  background-color: var(--white);
+  padding: 0 8px;
+}
+
+#jumbotron .description a {
+  text-decoration: underline;
+}
+
+#jumbotron .scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: var(--container-padding);
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 2px solid var(--black);
+  padding: 4px 4.5px;
+
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+  transition: 1s opacity, 1s transform;
+}
+
+#jumbotron .scroll-down.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+#jumbotron .scroll-down .scroll-wheel {
+  width: 4px;
+  height: 10px;
+  border-radius: 12px;
+  background-color: var(--black);
+  animation: scroll-anim 2s infinite ease-in-out;
+}
+
+@keyframes scroll-anim {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(16px);
+  }
+  75% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1120px) {
+  #jumbotron .title {
+    font-size: 180px;
+    letter-spacing: -2.4px;
+  }
+
+  #jumbotron .title.top-left {
+    top: -18px;
+    left: -4px;
+  }
+
+  #jumbotron .title.bottom-right {
+    bottom: -42px;
+    right: -2px;
+  }
+}
+
+@media (max-width: 860px) {
+  #jumbotron .title {
+    font-size: 20vw;
+    letter-spacing: -0.4vw;
+  }
+
+  #jumbotron .title.top-left {
+    top: -2vw;
+    left: -0.5vw;
+  }
+
+  #jumbotron .title.bottom-right {
+    bottom: -4.8vw;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #jumbotron .description {
+    top: 32px;
+  }
+
+  #jumbotron .scroll-down {
+    bottom: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  #jumbotron .description {
+    top: calc(calc(50vw * 0.3) + 24px);
+  }
+
+  #jumbotron .scroll-down {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  #jumbotron .title {
+    letter-spacing: -0.25vw;
+  }
+
+  #jumbotron .title.bottom-right {
+    right: -2px;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  line-height: 1.2;
+  white-space: pre;
+  text-align: left;
+  text-align-last: auto;
+  font-variant-ligatures: none;
+}
+
+body {
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.jupiter-terminal {
+  border-radius: 25px;
+  background-color: #282830;
+  position: relative;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border: 1px solid rgba(28, 27, 27, 0.3);
+  margin: 30px auto;
+  width: 90%;
+  max-width: 600px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jupiter-terminal-container {
+  min-height: 300px;
+  margin-top: 20px;
+}
+

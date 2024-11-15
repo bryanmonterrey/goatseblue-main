@@ -1,0 +1,63 @@
+/* app/(browse)/nft/_components/styles.module.css */
+.walletButtonContainer :global(.wallet-adapter-button) {
+  background-color: transparent !important;
+  font-family: courier !important;
+  border: 1px solid #74FFCC !important;
+  border-radius: 0px !important;
+  color: #74FFCC !important;
+  padding: 8px 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.walletButtonContainer :global(.wallet-adapter-button:hover) {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.walletButtonContainer :global(.wallet-adapter-button:not([disabled]):hover) {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+/* Mint button styles */
+.mintButton {
+  background-color: transparent !important;
+  font-family: courier !important;
+  border: 1px solid #74FFCC !important;
+  border-radius: 0px !important;
+  color: #74FFCC !important;
+  padding: 8px 16px !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.mintButton:hover {
+  background-color: #74FFCC !important;
+  color: black !important;
+}
+
+.mintButton:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* Modal styles */
+.walletButtonContainer :global(.wallet-adapter-modal-wrapper) {
+  background-color: black !important;
+  border: 1px solid #74FFCC !important;
+}
+
+.walletButtonContainer :global(.wallet-adapter-modal-button-close) {
+  background-color: transparent !important;
+  color: #74FFCC !important;
+  border: 1px solid #74FFCC !important;
+}
+
+.walletButtonContainer :global(.wallet-adapter-modal-list-more) {
+  color: #74FFCC !important;
+}
+
+.walletButtonContainer :global(.wallet-adapter-modal-list-more svg) {
+  fill: #74FFCC !important;
+}
