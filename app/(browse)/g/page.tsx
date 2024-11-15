@@ -103,7 +103,7 @@ export default function Home() {
       <div className="mb-8 mx-auto mt-5">
         
         <img
-          src="/banksygoat.svg"
+          src="/goatsewhite.png"
           alt="Goatse Singularity Board"
           className="w-96 h-32 p-4 object-contain mx-auto"
         />
