@@ -9,7 +9,7 @@ const HeroSection = dynamic(() => import('./_components/mobileHero'), {
 
 export default function HomePage() {
   return (
-    <main className='bg-darkblue'>
+    <main className='bg-[#000000]'>
       <HeroSection />
     </main>
   );

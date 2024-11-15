@@ -158,10 +158,10 @@ const MobileHero = () => {
   };
 
   return (
-    <div className="fixed inset-0 w-full h-full bg-darkblue overflow-hidden">
+    <div className="fixed inset-0 w-full h-full bg-black overflow-hidden">
       {/* Loading Screen */}
       <div 
-        className={`fixed inset-0 bg-darkblue transition-opacity duration-1000 z-50
+        className={`fixed inset-0 bg-black transition-opacity duration-1000 z-50
           ${loading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       >
         <div className="absolute bottom-0 left-0 text-white font-goatse font-black text-9xl">
