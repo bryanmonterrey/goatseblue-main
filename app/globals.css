@@ -65,20 +65,20 @@
 @import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 :root {
-  --background: #131020;
+  --background: #000000;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #131020;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
 
 body {
   color: var(--foreground);
-  background: #131020;
+  background: #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
