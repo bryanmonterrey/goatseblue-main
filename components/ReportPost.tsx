@@ -74,7 +74,7 @@ export function ReportPost({ postId }: ReportPostProps) {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="ml-2 bg-transparent border hover:text-azul hover:bg-transparent border-azul text-white rounded-none">
+        <Button variant="outline" size="sm" className="ml-2 bg-transparent border hover:text-white hover:bg-transparent border-white text-white rounded-none">
           Report Post
         </Button>
       </DialogTrigger>
@@ -92,7 +92,7 @@ export function ReportPost({ postId }: ReportPostProps) {
                 placeholder="Please provide details about why this post should be reviewed..."
                 value={reason}
                 onChange={(e) => setReason(e.target.value)}
-                className="min-h-[100px] rounded-none border-azul resize-none font-goatse placeholder:font-goatse placeholder:text-white text-white"
+                className="min-h-[100px] rounded-none border-white resize-none font-goatse placeholder:font-goatse placeholder:text-white text-white"
               />
               <div className="flex justify-end gap-2">
                 <Button

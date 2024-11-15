@@ -17,7 +17,7 @@ const POSTS_PER_PAGE = 10
 
 const ReplyContent = ({ reply, onDeleted }: { reply: Post; onDeleted: () => void }) => {
     return (
-      <div className="ml-4 mt-2 p-2 mb-3 bg-azul/20 border-l-2 border-azul">
+      <div className="ml-4 mt-2 p-2 mb-3 bg-white/20 border-l-2 border-white">
         {reply.file_path && (
           <div className="mb-2">
             <div className="text-xs text-gray-500 mb-1">
@@ -33,14 +33,14 @@ const ReplyContent = ({ reply, onDeleted }: { reply: Post; onDeleted: () => void
                 alt="attachment"
                 width={150}
                 height={150}
-                className="max-w-[200px] h-auto border border-azul"
+                className="max-w-[200px] h-auto border border-white"
               />
             )}
           </div>
           <div className="inline-block gap-2 items-center mb-2 ml-3 col-span-1">
             <div className='mb-4 space-x-2'>
               <span className="text-white">{reply.subject || 'No Subject'}</span>
-              <span className="text-azul">by {reply.name}</span>
+              <span className="text-white">by {reply.name}</span>
               <span className="text-gray-600">{new Date(reply.created_at).toLocaleString()}</span>
             </div>
             <div>
@@ -117,7 +117,7 @@ export default function PostList() {
     return (
       <div className="space-y-4 mt-8">
         {[...Array(3)].map((_, i) => (
-          <Card key={i} className="p-4 bg-transparent border rounded-none border-azul">
+          <Card key={i} className="p-4 bg-transparent border rounded-none border-white">
             <div className="space-y-3">
               <Skeleton className="h-4 w-[250px]" />
               <Skeleton className="h-4 w-[200px]" />
@@ -132,7 +132,7 @@ export default function PostList() {
   return (
     <div className="space-y-4 mt-8 font-goatse mb-5">
       {posts.map((post) => (
-        <Card key={post.id} className="p-4 bg-transparent border border-azul rounded-none font-goatse">
+        <Card key={post.id} className="p-4 bg-transparent border border-white rounded-none font-goatse">
           {post.file_path && (
             <div className="mb-2">
               <div className="text-xs text-gray-500 mb-1">
@@ -148,14 +148,14 @@ export default function PostList() {
                   alt="attachment"
                   width={150}
                   height={150}
-                  className="max-w-[200px] h-auto border border-azul"
+                  className="max-w-[200px] h-auto border border-white"
                 />
               )}
             </div>
             <div className="inline-block gap-2 items-center mb-2 ml-3 col-span-1">
               <div className='mb-4 space-x-2'>
                 <span className="text-white">{post.subject || 'No Subject'}</span>
-                <span className="text-azul">by {post.name}</span>
+                <span className="text-white">by {post.name}</span>
                 <span className="text-gray-600">{new Date(post.created_at).toLocaleString()} PM</span>
               </div>
               <div>
@@ -184,7 +184,7 @@ export default function PostList() {
             <div>
               <Button 
                 variant="ghost" 
-                className="text-white mr-5 hover:text-azul hover:bg-transparent p-0"
+                className="text-white mr-5 hover:text-white hover:bg-transparent p-0"
                 onClick={() => handleReply(post.id)}
               >
                 [Reply]
@@ -200,7 +200,7 @@ export default function PostList() {
             onClick={loadMore} 
             disabled={loadingMore}
             variant="outline"
-            className="text-white border-azul hover:bg-azul/20 font-goatse"
+            className="text-white border-white hover:bg-white/20 font-goatse"
           >
             {loadingMore ? (
               <>

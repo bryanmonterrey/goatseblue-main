@@ -97,15 +97,16 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-black border border-azul">
+      <DialogContent className="bg-black border border-white">
         <DialogHeader>
           <DialogTitle className="text-white font-goatse">Reply to Post</DialogTitle>
         </DialogHeader>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-azul text-black p-2 text-sm font-goatse">Name</label>
-            <Input 
+            <label className="bg-white text-black p-2 text-sm font-goatse">Name</label>
+            <Input
+
               type="text" 
               name="name" 
               required 
@@ -114,7 +115,7 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-azul text-black p-2 text-sm font-goatse">Subject</label>
+            <label className="bg-white text-black p-2 text-sm font-goatse">Subject</label>
             <Input 
               type="text" 
               name="subject" 
@@ -123,7 +124,7 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-start">
-            <label className="bg-azul text-black p-2 text-sm font-goatse">Comment</label>
+            <label className="bg-white text-black p-2 text-sm font-goatse">Comment</label>
             <Textarea 
               name="comment" 
               required
@@ -132,7 +133,7 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-azul text-black p-2 text-sm font-goatse">File</label>
+            <label className="bg-white text-black p-2 text-sm font-goatse">File</label>
             <Input 
               type="file" 
               name="file"
@@ -157,7 +158,7 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
           </div>
 
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-azul text-black p-2 text-sm font-goatse">Password</label>
+            <label className="bg-white text-black p-2 text-sm font-goatse">Password</label>
             <div className="flex gap-2 items-center max-w-md">
               <Input 
                 type="password" 
@@ -174,7 +175,7 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
               type="button" 
               variant="outline"
               onClick={onClose}
-              className="border-azul text-black font-goatse rounded-none px-2"
+              className="border-white text-black font-goatse rounded-none px-2"
             >
               Cancel
             </Button>
