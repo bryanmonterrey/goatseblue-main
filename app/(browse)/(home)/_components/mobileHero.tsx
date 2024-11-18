@@ -291,10 +291,10 @@ const MobileHero = () => {
           <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
             <div className='block space-y-7 max-w-[85ch]'>
             <div className="inline-block items-center space-y-7 justify-center">
-              <h1 className='text-3xl mx-auto font-medium text-center'>Roadmap</h1>
+              <h1 className='text-3xl mx-auto font-medium text-center p-2'>Roadmap</h1>
             <p ref={addToRefs}>Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. Spoiler: One of our first products will be an AI trader and 
               accumulater which will airdrop Goatse to holders so tokens are always in circulation. We plan on launching several AI 
-              products and a complete digital AI brand that will set the standard for AI companies not only in the crypto space but the entire AI space. We're here to give our hodlers what they didn't even know they wanted. 
+              products and a complete digital AI brand. We're here to give our hodlers what they didn't even know they wanted. 
              </p>
           </div>
           
