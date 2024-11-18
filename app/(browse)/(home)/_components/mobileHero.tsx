@@ -178,7 +178,7 @@ const MobileHero = () => {
     height: '100vh',
     WebkitOverflowScrolling: 'touch',
     touchAction: 'pan-y',
-    background: 'linear-gradient(to bottom, #FFFDD7 50%, black 50%)'
+    background: 'linear-gradient(to bottom, #DFEFFF 50%, black 50%)'
   }}
   onWheel={(e) => {
     const scroller = scrollContainerRef.current;
