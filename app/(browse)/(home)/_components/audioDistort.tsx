@@ -97,7 +97,7 @@ const AudioReactive3D = ({ audioUrl }: AudioReactive3DProps) => {
       // Load model
       const loader = new GLTFLoader();
       loader.load(
-        `${window.location.origin}/goatse.glb`,
+        `${window.location.origin}/goatsemaster.glb`,
         (gltf) => {
           modelRef.current = gltf.scene;
           
@@ -106,7 +106,7 @@ const AudioReactive3D = ({ audioUrl }: AudioReactive3DProps) => {
           const center = box.getCenter(new THREE.Vector3());
           const size = box.getSize(new THREE.Vector3());
           const maxDim = Math.max(size.x, size.y, size.z);
-          const scale = 3 / maxDim;
+          const scale = 2.5 / maxDim;
           
           modelRef.current.scale.multiplyScalar(scale);
           modelRef.current.position.x = -center.x * scale;
