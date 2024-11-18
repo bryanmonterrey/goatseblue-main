@@ -21,7 +21,11 @@ const config: Config = {
   			verminyv: ['verminV', 'monospace'],
         goatse: ['goatse', 'monospace'],
         courier: ['courier', 'monospace'],
-		inter: ['inter', 'monospace']
+		inter: ['inter', 'monospace'],
+		english: ['english', 'monospace'],
+		bookish: ['bookish', 'monospace'],
+		lumen: ['lumen', 'monospace'],
+		inria: ['inria', 'monospace'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

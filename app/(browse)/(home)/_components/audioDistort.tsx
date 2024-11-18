@@ -97,7 +97,7 @@ const AudioReactive3D = ({ audioUrl }: AudioReactive3DProps) => {
       // Load model
       const loader = new GLTFLoader();
       loader.load(
-        `${window.location.origin}/goatsemaster.glb`,
+        `${window.location.origin}/goatselight.glb`,
         (gltf) => {
           modelRef.current = gltf.scene;
           

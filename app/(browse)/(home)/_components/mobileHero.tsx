@@ -173,11 +173,12 @@ const MobileHero = () => {
       {/* Scrollable Container */}
       <div 
   ref={scrollContainerRef}
-  className="h-full overflow-y-auto overflow-x-hidden smooth-scroll"
+  className="h-screen overflow-y-auto overflow-x-hidden smooth-scroll bg-gradient-to-b"
   style={{ 
     height: '100vh',
     WebkitOverflowScrolling: 'touch',
-    touchAction: 'pan-y'
+    touchAction: 'pan-y',
+    background: 'linear-gradient(to bottom, #FFFDD7 50%, black 50%)'
   }}
   onWheel={(e) => {
     const scroller = scrollContainerRef.current;
@@ -200,8 +201,8 @@ const MobileHero = () => {
             }}
           >
             <div className="w-full flex justify-between items-start z-[1059]">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-inter tracking-tight text-white pt-5 pl-0">
-                $goatse
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-inter tracking-tight text-black pt-5 pl-2">
+                <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span>
               </h1>
               <div className="pt-5 pr-5 z-[1059]">
                 <NavMenu />
@@ -214,14 +215,14 @@ const MobileHero = () => {
               </div>
             </div>
 
-            <h1 className="w-full text-right text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-inter tracking-tight text-white z-[1000] pb-20 pr-4 sm:pb-8 sm:pr-8">
+            <h1 className="w-full text-right text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-lumen tracking-tight text-white z-[1000] pb-20 pr-4 sm:pb-8 sm:pr-8">
               singularity
             </h1>
           </div>
 
           {/* Scrollable Content */}
           <div className="absolute top-[100vh] w-full z-[1050]">
-            <div className="min-h-screen flex items-center justify-center py-20">
+            <div className="min-h-screen bg-black flex items-center justify-center py-20">
               <div ref={textContainerRef} className="relative flex items-center justify-center w-full text-white text-base max-w-[85ch]">
                 <div className="flex flex-col items-center font-inter justify-center space-y-3 opacity-90 px-4">
                   <p ref={addToRefs}>For anyone wanting to get caught up— </p>
@@ -264,7 +265,7 @@ const MobileHero = () => {
           </div>
 
           {/* Last Section */}
-          <div className="absolute top-[200vh] w-full min-h-screen bg-transparent last-section z-[1050]" style={{ opacity: 0 }}>
+          <div className="absolute top-[200vh] w-full min-h-screen bg-black last-section z-[1050]" style={{ opacity: 0 }}>
             <div className='flex items-center justify-center min-h-screen space-y-3 min-w-screen'>
             <div className='block space-y-7'>
             <div className="flex items-center justify-center">
@@ -287,11 +288,14 @@ const MobileHero = () => {
           
           </div>
           </div>
-          <div className='flex items-center justify-center min-h-screen space-y-3 min-w-screen mb-10'>
+          <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
             <div className='block space-y-7 max-w-[85ch]'>
             <div className="inline-block items-center space-y-7 justify-center">
               <h1 className='text-3xl mx-auto font-medium text-center'>Roadmap</h1>
-            <p ref={addToRefs}>Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. Spoiler: One of our first products will be an AI trader and accumulater which will airdrop Goatse to holders so tokens are always in circulation. There will be continuous and lifelong incentive to hold and you’re early. We plan on launching several AI products and a complete digital AI brand that will set the standard for AI companies not only in the crypto space but the entire AI space. We're actually working towards delivering 75% of the total AI infrastructure crypto will grow to have. We're here to give our hodlers what they didn't even know they wanted. We want to give you as much as we can without giving away our roadmap entirely away. This is actually a CTO with a lit team full of dreams. </p>
+            <p ref={addToRefs}>Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. Spoiler: One of our first products will be an AI trader and 
+              accumulater which will airdrop Goatse to holders so tokens are always in circulation. There will be continuous and lifelong incentive to hold and you’re early. We plan on launching several AI 
+              products and a complete digital AI brand that will set the standard for AI companies not only in the crypto space but the entire AI space. We're here to give our hodlers what they didn't even know they wanted. 
+             </p>
           </div>
           
           </div>
