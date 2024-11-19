@@ -25,7 +25,7 @@ export default function NavMenu() {
         <div className="flex flex-col items-start space-y-5 mt-3 z-[9999999]">
             {Array.from(linksMap.entries()).map(([label, href]) => (
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                <Button key={`${label}-${href}`} className='block font-inter backdrop-blur-custom h-7 backdrop-filter backdrop-blur-lg bg-transparent border border-black rounded-none'>
+                <Button key={`${label}-${href}`} className='block font-inter backdrop-blur-custom h-7 backdrop-filter backdrop-blur-lg bg-transparent border border-black rounded-md'>
                     <Link href={href} className={`px-3 py-2 ${activeLinkKey === label ? 'text-bold text-black italic' : 'text-black hover:text-white hover:italic transition-colors ease-in-out duration-150'}`}>
                         {label}
                     </Link>
