@@ -292,8 +292,7 @@ const MobileHero = () => {
             <div className='block space-y-7 max-w-[85ch]'>
             <div className="inline-block items-center space-y-7 justify-center">
               <h1 className='text-3xl mx-auto font-medium text-center p-2'>Roadmap</h1>
-            <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near. Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. We've released our own AI equivalent to truth terminal which will be worked on and upgraded daily, feel free to ask more. We plan on launching several AI 
-              products and a complete digital AI brand. We're here to give our hodlers what they didn't even know they wanted. 
+            <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near. Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. We're here to give our hodlers what they didn't even know they wanted. 
              </p>
           </div>
           
