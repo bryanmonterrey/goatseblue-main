@@ -8,6 +8,7 @@ import ModelViewer from './ModelViewer';
 import Video from 'next-video';
 import movie from '@/videos/movie.mp4';
 import { toast } from '@/hooks/use-toast';
+import { TweetGrid } from '@/components/ui/tweet-grid';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -23,6 +24,16 @@ const MobileHero = () => {
   const paragraphRefs = useRef<HTMLParagraphElement[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const textToCopy = 'ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
+  const exampleTweets = [
+    "1847656358507663434",
+    "1845676019849547853",
+    "1859772390755967226",
+    "1854603901611159963",
+    "1854288161880289631",
+    "1845675375839359133",
+    "1859767853916025101",
+    "1859749795855990817",
+  ]
 
   useEffect(() => {
     setIsMounted(true);
@@ -310,20 +321,22 @@ const MobileHero = () => {
           </div>
           <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
             <div className='block space-y-7 items-center max-w-[85ch] justify-center'>
-            <div className=" items-center space-y-7 text-center justify-center mx-auto">
+              <div className="block items-center space-y-7 text-center justify-center mx-auto">
               <h1 className='text-3xl mx-auto font-medium text-center p-2'>Roadmap</h1>
-            <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near.
-             </p>
-          </div>
-          <Video src={movie} />
-          <div className='flex items-center justify-center'>
-          <button onClick={handleCopy} className="copy-button text-center">
-                ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
-              </button>
+              <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near.</p>
               </div>
-          
+              <Video src={movie} />
+              <div className='flex items-center justify-center'>
+                <button onClick={handleCopy} className="copy-button text-center">
+                  ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
+                </button>
+              </div>
+            </div>
           </div>
+          <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
+            <TweetGrid tweets={exampleTweets} />
           </div>
+
           </div>
           
         </div>
