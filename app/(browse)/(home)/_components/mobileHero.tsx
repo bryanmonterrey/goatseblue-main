@@ -316,9 +316,11 @@ const MobileHero = () => {
              </p>
           </div>
           <Video src={movie} />
-          <button onClick={handleCopy} className="copy-button">
+          <div className='flex items-center justify-center'>
+          <button onClick={handleCopy} className="copy-button text-center">
                 ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
               </button>
+              </div>
           
           </div>
           </div>
