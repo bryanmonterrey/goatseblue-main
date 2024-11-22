@@ -115,7 +115,7 @@ export function DeletePost({ postId, onDeleted }: DeletePostProps) {
           <Button 
             onClick={handleDelete}
             disabled={isDeleting || !password}
-            className='font-inter w-fit px-2 mx-auto bg-white rounded-lg text-black hover:italic'
+            className='font-inter w-fit px-2 mx-auto bg-white rounded-none text-black hover:italic'
           >
             {isDeleting ? 'Deleting...' : 'Delete'}
           </Button>

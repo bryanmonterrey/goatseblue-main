@@ -99,14 +99,14 @@ export function ReportPost({ postId }: ReportPostProps) {
                   variant="outline"
                   onClick={() => setIsOpen(false)}
                   disabled={isSubmitting}
-                  className='px-2 rounded-lg font-inter '
+                  className='px-2 rounded-none font-inter '
                 >
                   Cancel
                 </Button>
                 <Button
                   onClick={handleSubmit}
                   disabled={isSubmitting || !reason.trim()}
-                  className='px-2 rounded-lg text-black bg-white font-inter '
+                  className='px-2 rounded-none text-black bg-white font-inter '
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Report'}
                 </Button>
