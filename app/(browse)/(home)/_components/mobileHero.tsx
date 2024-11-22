@@ -23,7 +23,7 @@ const MobileHero = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
   const paragraphRefs = useRef<HTMLParagraphElement[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const textToCopy = 'ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
+  const textToCopy = '9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
   const exampleTweets = [
     "1847656358507663434",
     "1845676019849547853",
