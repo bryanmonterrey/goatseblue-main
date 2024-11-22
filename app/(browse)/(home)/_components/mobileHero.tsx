@@ -309,8 +309,8 @@ const MobileHero = () => {
           </div>
           </div>
           <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
-            <div className='block space-y-7 max-w-[85ch]'>
-            <div className="inline-block items-center space-y-7 justify-center">
+            <div className='block space-y-7 items-center max-w-[85ch] justify-center'>
+            <div className=" items-center space-y-7 text-center justify-center mx-auto">
               <h1 className='text-3xl mx-auto font-medium text-center p-2'>Roadmap</h1>
             <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near.
              </p>
