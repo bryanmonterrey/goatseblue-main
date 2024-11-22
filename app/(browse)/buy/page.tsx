@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div className="min-h-screen w-full flex items-center justify-center p-4">
             <div className='absolute right-3 top-3 mb-6'>
-                <Button className='border border-white py-1 px-4 rounded-none text-white hover:text-white hover:italic font-inter mx-auto'>
+                <Button className='border border-white py-1 px-4 rounded-lg text-white hover:text-white hover:italic font-inter mx-auto'>
                     <Link href="https://www.goatsesingularity.vip/">
                         back to Home
                     </Link>
