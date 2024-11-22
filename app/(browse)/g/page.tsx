@@ -113,19 +113,19 @@ export default function Home() {
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-inter">Name</label>
+          <label className="bg-white text-black p-2 text-sm rounded-lg font-inter">Name</label>
           <Input 
             type="text" 
             name="name" 
             required 
-            className="max-w-md font-inter border-white"
+            className="max-w-md font-inter border-white rounded-lg"
           />
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-inter">Subject</label>
+          <label className="bg-white rounded-lg text-black p-2 text-sm font-inter">Subject</label>
           <div className="flex gap-2 items-center max-w-md">
-            <Input type="text" name="subject" className='font-inter border-white' />
+            <Input type="text" name="subject" className='font-inter border-white rounded-lg' />
             <Button type="button" variant="outline" size="sm" className='rounded-lg text-black font-inter'>
               New Topic
             </Button>
@@ -133,7 +133,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-start">
-          <label className="bg-white text-black p-2 text-sm font-inter">Comment</label>
+          <label className="bg-white text-black p-2 text-sm font-inter rounded-lg">Comment</label>
           <Textarea 
             name="comment" 
             required
@@ -142,11 +142,11 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-inter">File</label>
+          <label className="bg-white rounded-lg text-black p-2 text-sm font-inter">File</label>
           <Input 
             type="file" 
             name="file"
-            className="max-w-md font-inter border-white hover:cursor-pointer"
+            className="max-w-md font-inter border-white rounded-lg hover:cursor-pointer"
             accept="image/*" // Add this to restrict to images only
             onChange={(e) => {
                 // Optional: Add client-side file validation
@@ -168,14 +168,14 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm font-inter">Password</label>
+          <label className="bg-white rounded-lg text-black p-2 text-sm font-inter">Password</label>
           <div className="flex gap-2 items-center max-w-md">
             <Input 
               type="password" 
               name="password"
               placeholder='N)L$Ko$r'
               required
-              className="max-w-[200px] font-inter border-white placeholder:text-gray-500"
+              className="max-w-[200px] font-inter rounded-lg border-white placeholder:text-gray-500"
             />
             <span className="text-sm text-gray-500 font-inter">(For file deletion.)</span>
           </div>
