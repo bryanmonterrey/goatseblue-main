@@ -271,7 +271,7 @@ const MobileHero = () => {
             <div className="flex items-center justify-center">
               <Link 
                 href="/g" 
-                className="bg-transparent text-white hover:text-white hover:italic font-inter border border-white px-6 py-3 text-base transition-all duration-300"
+                className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-md border-white px-6 py-3 text-base transition-all duration-300"
               >
                 /g/ - enter the $goatse singularity board
               </Link>
@@ -279,7 +279,7 @@ const MobileHero = () => {
             <div className="flex items-center justify-center">
             <Link 
               href="/buy" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border border-white px-6 py-3 text-base transition-all duration-300"
+              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-md border-white px-6 py-3 text-base transition-all duration-300"
               style={{ touchAction: 'manipulation' }}
             >
               buy $goatse here
@@ -292,8 +292,7 @@ const MobileHero = () => {
             <div className='block space-y-7 max-w-[85ch]'>
             <div className="inline-block items-center space-y-7 justify-center">
               <h1 className='text-3xl mx-auto font-medium text-center p-2'>Roadmap</h1>
-            <p ref={addToRefs}>Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. We've released our own AI equivalent to truth terminal which will be worked on and upgraded daily, feel free to ask more. One of our first products will be an AI trader and 
-              accumulater which will airdrop Goatse to holders so tokens are always in circulation. We plan on launching several AI 
+            <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near. Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. We've released our own AI equivalent to truth terminal which will be worked on and upgraded daily, feel free to ask more. We plan on launching several AI 
               products and a complete digital AI brand. We're here to give our hodlers what they didn't even know they wanted. 
              </p>
           </div>
