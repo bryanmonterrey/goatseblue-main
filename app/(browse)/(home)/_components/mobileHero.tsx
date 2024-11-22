@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
 import AudioReactive3D from './audioDistort';
 import ModelViewer from './ModelViewer';
+import Video from 'next-video';
+import movie from '/videos/movie.mp4';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -295,6 +297,7 @@ const MobileHero = () => {
             <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near. Goatse Singularity is the end result. It is a digital AI economy that will spark and move crypto and AI forward. We're here to give our hodlers what they didn't even know they wanted. 
              </p>
           </div>
+          <Video src={movie} />
           
           </div>
           </div>
