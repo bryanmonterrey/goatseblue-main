@@ -126,7 +126,7 @@ export default function Home() {
           <label className="bg-white text-black p-2 text-sm font-inter">Subject</label>
           <div className="flex gap-2 items-center max-w-md">
             <Input type="text" name="subject" className='font-inter border-white' />
-            <Button type="button" variant="outline" size="sm" className='rounded-none text-black font-inter'>
+            <Button type="button" variant="outline" size="sm" className='rounded-lg text-black font-inter'>
               New Topic
             </Button>
           </div>
@@ -137,7 +137,7 @@ export default function Home() {
           <Textarea 
             name="comment" 
             required
-            className="min-h-[100px] font-inter resize-none rounded-none border-white"
+            className="min-h-[100px] font-inter resize-none rounded-lg border-white"
           />
         </div>
 
@@ -183,7 +183,7 @@ export default function Home() {
 
         <Button 
           type="submit" 
-          className="ml-[108px] bg-white text-black hover:italic rounded-none py-1 px-6 font-inter"
+          className="ml-[108px] bg-white text-black hover:italic rounded-lg py-1 px-6 font-inter"
           disabled={uploading}
         >
           {uploading ? 'Posting...' : 'Post'}
