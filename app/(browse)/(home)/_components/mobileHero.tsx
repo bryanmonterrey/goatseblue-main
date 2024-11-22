@@ -332,7 +332,7 @@ const MobileHero = () => {
                 </button>
               </div>
               <div className='flex items-center justify-center'>
-                <p> click ca to copy address </p>
+                <p className='-mt-4'> click ca to copy address </p>
               </div>
             </div>
           </div>
