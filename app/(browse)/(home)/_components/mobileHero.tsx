@@ -6,7 +6,8 @@ import Link from 'next/link';
 import AudioReactive3D from './audioDistort';
 import ModelViewer from './ModelViewer';
 import Video from 'next-video';
-import movie from '/videos/movie.mp4';
+import movie from '@/videos/movie.mp4';
+import { toast } from '@/hooks/use-toast';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -21,6 +22,7 @@ const MobileHero = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
   const paragraphRefs = useRef<HTMLParagraphElement[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const textToCopy = 'ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
 
   useEffect(() => {
     setIsMounted(true);
@@ -156,6 +158,22 @@ const MobileHero = () => {
   const addToRefs = (el: HTMLParagraphElement | null) => {
     if (el && !paragraphRefs.current.includes(el)) {
       paragraphRefs.current.push(el);
+    }
+  };
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      toast({
+        title: "Success",
+        description: "Copied to clipboard!"
+      });
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Failed to copy text."
+      });
     }
   };
 
@@ -298,6 +316,9 @@ const MobileHero = () => {
              </p>
           </div>
           <Video src={movie} />
+          <button onClick={handleCopy} className="copy-button">
+                ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
+              </button>
           
           </div>
           </div>
