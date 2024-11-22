@@ -94,7 +94,7 @@ export default function Home() {
     <main className="max-w-7xl mx-auto ">
     <div className="max-w-lg mx-auto p-4">
     <div className='absolute right-3 top-3 mb-6'>
-        <Button className='border border-white py-1 px-4 rounded-none text-white hover:text-white hover:italic font-inter mx-auto'>
+        <Button className='border border-white py-1 px-4 rounded-lg text-white hover:text-white hover:italic font-inter mx-auto'>
             <Link href="https://www.goatsesingularity.vip/">
                 back to Home
             </Link>

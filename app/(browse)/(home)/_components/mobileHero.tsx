@@ -271,7 +271,7 @@ const MobileHero = () => {
             <div className="flex items-center justify-center">
               <Link 
                 href="/g" 
-                className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-md border-white px-6 py-3 text-base transition-all duration-300"
+                className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-lg border-white px-6 py-3 text-base transition-all duration-300"
               >
                 /g/ - enter the $goatse singularity board
               </Link>
@@ -279,7 +279,7 @@ const MobileHero = () => {
             <div className="flex items-center justify-center">
             <Link 
               href="/buy" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-md border-white px-6 py-3 text-base transition-all duration-300"
+              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-lg border-white px-6 py-3 text-base transition-all duration-300"
               style={{ touchAction: 'manipulation' }}
             >
               buy $goatse here
