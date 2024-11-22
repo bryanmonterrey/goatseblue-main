@@ -331,6 +331,9 @@ const MobileHero = () => {
                   ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
                 </button>
               </div>
+              <div className='flex items-center justify-center'>
+                <p> click ca to copy address </p>
+              </div>
             </div>
           </div>
           <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
