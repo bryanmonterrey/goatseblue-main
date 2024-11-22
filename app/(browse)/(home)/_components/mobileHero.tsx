@@ -222,7 +222,7 @@ const MobileHero = () => {
 
           {/* Scrollable Content */}
           <div className="absolute top-[100vh] w-full z-[1050]">
-            <div className="min-h-screen bg-black flex items-center justify-center py-20">
+            <div className="min-h-screen bg-black flex items-center justify-center py-20 rounded-t-xl">
               <div ref={textContainerRef} className="relative flex items-center justify-center w-full text-white text-base max-w-[85ch]">
                 <div className="flex flex-col items-center font-inter justify-center space-y-3 opacity-90 px-4">
                   <p ref={addToRefs}>For anyone wanting to get caught up— </p>
