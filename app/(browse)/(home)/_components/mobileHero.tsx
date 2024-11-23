@@ -9,6 +9,7 @@ import Video from 'next-video';
 import movie from '@/videos/movie.mp4';
 import { toast } from '@/hooks/use-toast';
 import { TweetGrid } from '@/components/ui/tweet-grid';
+import LocomotiveScroll from 'locomotive-scroll';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -34,6 +35,27 @@ const MobileHero = () => {
     "1859767853916025101",
     "1859749795855990817",
   ]
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const scrollContainer = document.querySelector('[data-scroll-container]') as HTMLElement | null;
+
+      if (scrollContainer) {
+        const locomotiveScroll = new LocomotiveScroll({
+          el: scrollContainer,
+          smooth: true,
+        });
+
+        return () => {
+          if (locomotiveScroll) locomotiveScroll.destroy();
+        };
+      }
+    }
+  }, []);
 
   useEffect(() => {
     setIsMounted(true);
@@ -189,7 +211,7 @@ const MobileHero = () => {
   };
 
   return (
-    <div className="fixed inset-0 w-full h-full bg-black overflow-hidden">
+    <div className="fixed inset-0 w-full h-full bg-black overflow-hidden" data-scroll-container>
       {/* Loading Screen */}
       <div 
         className={`fixed inset-0 bg-black transition-opacity duration-1000 z-50
