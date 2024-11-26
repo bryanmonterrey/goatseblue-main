@@ -106,7 +106,7 @@ const AudioReactive3D = ({ audioUrl }: AudioReactive3DProps) => {
           const center = box.getCenter(new THREE.Vector3());
           const size = box.getSize(new THREE.Vector3());
           const maxDim = Math.max(size.x, size.y, size.z);
-          const scale = 2.5 / maxDim;
+          const scale = 1.75 / maxDim;
           
           modelRef.current.scale.multiplyScalar(scale);
           modelRef.current.position.x = -center.x * scale;
