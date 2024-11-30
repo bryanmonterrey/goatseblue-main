@@ -93,7 +93,7 @@ export function DeletePost({ postId, onDeleted }: DeletePostProps) {
         <Button 
           variant="outline" 
           size="sm" 
-          className='bg-transparent border hover:text-white hover:bg-transparent border-white text-white rounded-lg'
+          className='bg-transparent border hover:text-white hover:bg-transparent border-white text-white rounded-none'
         >
           Delete Post
         </Button>
@@ -107,7 +107,7 @@ export function DeletePost({ postId, onDeleted }: DeletePostProps) {
             <Input
               type="password"
               placeholder="Enter deletion password"
-              className='text-white font-inter placeholder:text-white border-white rounded-lg'
+              className='text-white font-inter placeholder:text-white border-white rounded-none'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

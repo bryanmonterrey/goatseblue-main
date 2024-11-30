@@ -74,7 +74,7 @@ export function ReportPost({ postId }: ReportPostProps) {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="ml-2 bg-transparent border hover:text-white hover:bg-transparent border-white text-white rounded-lg">
+        <Button variant="outline" size="sm" className="ml-2 bg-transparent border hover:text-white hover:bg-transparent border-white text-white rounded-none">
           Report Post
         </Button>
       </DialogTrigger>

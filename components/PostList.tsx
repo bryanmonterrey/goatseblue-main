@@ -117,7 +117,7 @@ export default function PostList() {
     return (
       <div className="space-y-4 mt-8">
         {[...Array(3)].map((_, i) => (
-          <Card key={i} className="p-4 bg-transparent border rounded-lg border-white">
+          <Card key={i} className="p-4 bg-transparent border rounded-none border-white">
             <div className="space-y-3">
               <Skeleton className="h-4 w-[250px]" />
               <Skeleton className="h-4 w-[200px]" />
@@ -132,7 +132,7 @@ export default function PostList() {
   return (
     <div className="space-y-4 mt-8 font-inter mb-5">
       {posts.map((post) => (
-        <Card key={post.id} className="p-4 bg-transparent border border-white rounded-lg font-inter">
+        <Card key={post.id} className="p-4 bg-transparent border border-white rounded-none font-inter">
           {post.file_path && (
             <div className="mb-2">
               <div className="text-xs text-gray-500 mb-1">
@@ -184,7 +184,7 @@ export default function PostList() {
             <div>
               <Button 
                 variant="ghost" 
-                className="text-white mr-5 hover:text-white rounded-lg hover:bg-transparent p-0"
+                className="text-white mr-5 hover:text-white rounded-none hover:bg-transparent p-0"
                 onClick={() => handleReply(post.id)}
               >
                 [Reply]
