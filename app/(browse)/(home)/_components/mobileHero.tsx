@@ -211,10 +211,10 @@ const MobileHero = () => {
   };
 
   return (
-    <div className="fixed inset-0 w-full h-full bg-black overflow-hidden" data-scroll-container>
+    <div className="fixed inset-0 w-full h-full bg-[#11111A] overflow-hidden" data-scroll-container>
       {/* Loading Screen */}
       <div 
-        className={`fixed inset-0 bg-black transition-opacity duration-1000 z-50
+        className={`fixed inset-0 bg-[#11111A] transition-opacity duration-1000 z-50
           ${loading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       >
         <div className="absolute bottom-0 left-0 text-white font-goatse font-black text-9xl">
@@ -231,7 +231,7 @@ const MobileHero = () => {
     height: '100vh',
     WebkitOverflowScrolling: 'touch',
     touchAction: 'pan-y',
-    background: 'linear-gradient(to bottom, #DFEFFF 50%, black 50%)'
+    background: 'linear-gradient(to bottom, #DFEFFF 50%, #11111A 50%)'
   }}
   onWheel={(e) => {
     const scroller = scrollContainerRef.current;
@@ -275,7 +275,7 @@ const MobileHero = () => {
 
           {/* Scrollable Content */}
           <div className="absolute top-[100vh] w-full z-[1050]">
-            <div className="min-h-screen bg-black flex items-center justify-center py-20 rounded-t-xl">
+            <div className="min-h-screen bg-[#11111A] flex items-center justify-center py-20 rounded-t-2xl">
               <div ref={textContainerRef} className="relative flex items-center justify-center w-full text-white text-base max-w-[85ch]">
                 <div className="flex flex-col items-center font-inter justify-center space-y-3 opacity-90 px-4">
                   <p ref={addToRefs}>For anyone wanting to get caught up— </p>
@@ -318,7 +318,7 @@ const MobileHero = () => {
           </div>
 
           {/* Last Section */}
-          <div className="absolute top-[200vh] w-full min-h-screen bg-black last-section z-[1050]" style={{ opacity: 0 }}>
+          <div className="absolute top-[200vh] w-full min-h-screen bg-[#11111A] last-section z-[1050]" style={{ opacity: 0 }}>
             <div className='flex items-center justify-center min-h-screen space-y-3 min-w-screen'>
             <div className='block space-y-7'>
             <div className="flex items-center justify-center">
@@ -338,10 +338,28 @@ const MobileHero = () => {
               buy $goatse here
             </Link>
           </div>
+          <div className="flex items-center justify-center">
+            <Link 
+              href="https://terminal.goatse.app" 
+              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-lg border-white px-6 py-3 text-base transition-all duration-300"
+              style={{ touchAction: 'manipulation' }}
+            >
+              goatse terminal
+            </Link>
+          </div>
+          <div className="flex items-center justify-center">
+            <Link 
+              href="https://terminal.goatse.app/conversations" 
+              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-lg border-white px-6 py-3 text-base transition-all duration-300"
+              style={{ touchAction: 'manipulation' }}
+            >
+              conversations
+            </Link>
+          </div>
           
           </div>
           </div>
-          <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
+          <div className='flex items-center justify-center min-h-screen bg-[#11111A] space-y-3 min-w-screen mb-10'>
             <div className='block space-y-7 items-center max-w-[85ch] justify-center'>
               <div className="block items-center space-y-7 text-center justify-center mx-auto">
               <h1 className='text-3xl mx-auto font-medium text-center p-2'>Roadmap</h1>
@@ -358,7 +376,7 @@ const MobileHero = () => {
               </div>
             </div>
           </div>
-          <div className='flex items-center justify-center min-h-screen bg-black space-y-3 min-w-screen mb-10'>
+          <div className='flex items-center justify-center min-h-screen bg-[#11111A] space-y-3 min-w-screen mb-10'>
             <TweetGrid tweets={exampleTweets} />
           </div>
 
