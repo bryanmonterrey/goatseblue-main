@@ -231,7 +231,7 @@ const MobileHero = () => {
     height: '100vh',
     WebkitOverflowScrolling: 'touch',
     touchAction: 'pan-y',
-    background: 'linear-gradient(to bottom, #DFEFFF 50%, #11111A 50%)'
+    background: '#11111A'
   }}
   onWheel={(e) => {
     const scroller = scrollContainerRef.current;
@@ -254,23 +254,15 @@ const MobileHero = () => {
             }}
           >
             <div className="w-full flex justify-between items-start z-[1059]">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-inter tracking-tight text-black pt-5 pl-2">
-                <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span>
+              <h1 className="w-full text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl font-inter tracking-tight text-white text-center pt-5">
+                <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span><span className='font-lumen'> singularity</span>
               </h1>
-              <div className="pt-5 pr-5 z-[1059]">
-                <NavMenu />
-              </div>
             </div>
-
             <div className="absolute inset-0 flex items-center justify-center z-[1025]">
               <div className="relative pt-24 w-full h-full flex items-center justify-center">
                 <AudioReactive3D audioUrl="/goatse.mp3" />
               </div>
             </div>
-
-            <h1 className="w-full text-right text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-lumen tracking-tight text-white z-[1000] pb-20 pr-4 sm:pb-8 sm:pr-8">
-              singularity
-            </h1>
           </div>
 
           {/* Scrollable Content */}
