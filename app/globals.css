@@ -335,3 +335,21 @@ body {
   margin-top: 20px;
 }
 
+/* Required Dock Styles */
+.mobile-dock-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: transparent;
+  padding: 1rem;
+  pointer-events: auto;
+  touch-action: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-dock-container {
+    bottom: env(safe-area-inset-bottom);
+  }
+}

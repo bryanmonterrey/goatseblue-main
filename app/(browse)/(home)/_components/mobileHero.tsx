@@ -265,9 +265,7 @@ const MobileHero = () => {
                 <AudioReactive3D audioUrl="/goatse.mp3" />
               </div>
             </div>
-            <div className="pb-5 z-[1059]">
-                <AppleStyleDock />
-            </div>
+            
           </div>
 
           {/* Scrollable Content */}
