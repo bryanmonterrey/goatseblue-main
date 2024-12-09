@@ -214,15 +214,6 @@ const MobileHero = () => {
   return (
     <div className="fixed inset-0 w-full h-full bg-[#11111A] overflow-hidden" data-scroll-container>
       {/* Loading Screen */}
-      <div 
-        className={`fixed inset-0 bg-[#11111A] transition-opacity duration-1000 z-50
-          ${loading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-      >
-        <div className="absolute bottom-0 left-0 text-white font-goatse font-black text-9xl">
-          {loadingPercentage}
-          <span className="text-9xl font-black ml-2">%</span>
-        </div>
-      </div>
 
       {/* Scrollable Container */}
       <div 
@@ -265,9 +256,7 @@ const MobileHero = () => {
                 <AudioReactive3D audioUrl="/goatse.mp3" />
               </div>
             </div>
-            <div className="fixed inset-x-0 bottom-0 z-[9999] pointer-events-auto">
-              <AppleStyleDock />
-            </div>
+         
           </div>
 
           {/* Scrollable Content */}
