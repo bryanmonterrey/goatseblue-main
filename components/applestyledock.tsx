@@ -1,70 +1,67 @@
 import {
     Activity,
+    Bot,
     Component,
     HomeIcon,
     Mail,
     Package,
     ScrollText,
+    ShoppingCart,
+    SquareDashedBottomCode,
     SunMoon,
   } from 'lucide-react';
   
   import { Dock, DockIcon, DockItem, DockLabel } from '@/components/core/dock';
+import Image from 'next/image';
   
   const data = [
     {
-      title: 'Home',
+      title: 'Twitter',
       icon: (
-        <HomeIcon className='h-full w-full text-neutral-600 dark:text-neutral-300' />
+        <Image src='/x.svg' alt='Twitter' width={24} height={24} className='h-full w-full text-neutral-300' />
       ),
-      href: '#',
+      href: 'https://x.com/Goatse_Solana',
     },
     {
-      title: 'Products',
+      title: 'Dexscreener',
       icon: (
-        <Package className='h-full w-full text-neutral-600 dark:text-neutral-300' />
+        <Image src='/dexscreener.svg' alt='Dexscreener' width={24} height={24} className='h-full w-full text-neutral-300' />
       ),
-      href: '#',
+      href: 'https://dexscreener.com/solana/bilkbpsrjxsorqxcnxox3kargpfbpekjjggeokpyhkgp',
     },
     {
-      title: 'Components',
+      title: 'Buy',
       icon: (
-        <Component className='h-full w-full text-neutral-600 dark:text-neutral-300' />
+        <ShoppingCart className='h-full w-full text-neutral-300' />
       ),
-      href: '#',
+      href: '/buy',
     },
     {
-      title: 'Activity',
+      title: 'Telegram',
       icon: (
-        <Activity className='h-full w-full text-neutral-600 dark:text-neutral-300' />
+        <Image src='/telegram.svg' alt='Telegram' width={24} height={24} className='h-full w-full text-neutral-300' />
       ),
-      href: '#',
+      href: 'https://t.me/Goatse_Singularity',
     },
     {
-      title: 'Change Log',
+      title: 'AI',
       icon: (
-        <ScrollText className='h-full w-full text-neutral-600 dark:text-neutral-300' />
+        <Bot className='h-full w-full text-neutral-300' />
       ),
-      href: '#',
+      href: 'https://x.com/goatse_terminal',
     },
     {
-      title: 'Email',
+      title: 'Terminal',
       icon: (
-        <Mail className='h-full w-full text-neutral-600 dark:text-neutral-300' />
+        <SquareDashedBottomCode className='h-full w-full text-neutral-300' />
       ),
-      href: '#',
-    },
-    {
-      title: 'Theme',
-      icon: (
-        <SunMoon className='h-full w-full text-neutral-600 dark:text-neutral-300' />
-      ),
-      href: '#',
+      href: 'https://terminal.goatse.app',
     },
   ];
   
   export function AppleStyleDock() {
     return (
-      <div className='absolute bottom-2 left-1/2 max-w-full -translate-x-1/2'>
+      <div className='absolute bottom-5 left-1/2 max-w-full -translate-x-1/2'>
         <Dock className='items-end pb-3'>
           {data.map((item, idx) => (
             <DockItem
