@@ -1,15 +1,9 @@
 import {
-    Activity,
     Bot,
-    Component,
-    HomeIcon,
-    Mail,
-    Package,
-    ScrollText,
     ShoppingCart,
     SquareDashedBottomCode,
-    SunMoon,
   } from 'lucide-react';
+  import Link from 'next/link';
   
   import { Dock, DockIcon, DockItem, DockLabel } from '@/components/core/dock';
 import Image from 'next/image';
@@ -58,21 +52,39 @@ import Image from 'next/image';
       href: 'https://terminal.goatse.app',
     },
   ];
+
+  
   
   export function AppleStyleDock() {
+    const handleExternalClick = (href: string) => {
+        window.open(href, '_blank', 'noopener,noreferrer');
+      };
+    
     return (
       <div className='absolute bottom-5 left-1/2 max-w-full -translate-x-1/2'>
         <Dock className='items-end pb-3'>
-          {data.map((item, idx) => (
-            <DockItem
+        {data.map((item, idx) => (
+          item.href.startsWith('/') ? (
+            <Link key={idx} href={item.href} className="block">
+              <DockItem className='aspect-square rounded-full bg-neutral-800'>
+                <DockLabel>{item.title}</DockLabel>
+                <DockIcon>{item.icon}</DockIcon>
+              </DockItem>
+            </Link>
+          ) : (
+            <div
               key={idx}
-              className='aspect-square rounded-full bg-neutral-800'
+              onClick={() => handleExternalClick(item.href)}
+              className="cursor-pointer"
             >
-              <DockLabel>{item.title}</DockLabel>
-              <DockIcon>{item.icon}</DockIcon>
-            </DockItem>
-          ))}
-        </Dock>
+              <DockItem className='aspect-square rounded-full bg-neutral-800'>
+                <DockLabel>{item.title}</DockLabel>
+                <DockIcon>{item.icon}</DockIcon>
+              </DockItem>
+            </div>
+          )
+        ))}
+      </Dock>
       </div>
     );
   }
