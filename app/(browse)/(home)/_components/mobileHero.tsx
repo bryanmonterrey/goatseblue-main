@@ -246,13 +246,13 @@ const MobileHero = () => {
             }}
           >
             <div className="w-full flex justify-between items-start z-[1059]">
-              <h1 className="w-full text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-inter tracking-tight text-white text-center pt-5">
+              <h1 className="w-full text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-inter tracking-tight text-white text-center pt-14">
                 <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span><span className='font-lumen'> singularity</span>
               </h1>
             </div>
 
             <div className="absolute inset-0 flex items-center justify-center z-[1025]">
-              <div className="relative pt-14 w-full h-full flex items-center justify-center">
+              <div className="relative pt-10 w-full h-full flex items-center justify-center">
                 <AudioReactive3D audioUrl="/goatse.mp3" />
               </div>
             </div>
