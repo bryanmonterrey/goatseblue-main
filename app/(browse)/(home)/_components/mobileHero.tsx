@@ -362,7 +362,7 @@ const MobileHero = () => {
               </div>
             </div>
           </div>
-          <div className='flex items-center justify-center min-h-screen bg-[#11111A] space-y-3 min-w-screen mb-10'>
+          <div className='flex items-center justify-center min-h-screen bg-[#11111A] space-y-3 min-w-screen mb-10 pb-44'>
             <TweetGrid tweets={exampleTweets} />
           </div>
 
