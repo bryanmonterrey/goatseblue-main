@@ -15,6 +15,10 @@ const config: Config = {
   			azul: '#74FFCC',
         darkblue: '#131020',
   		},
+		  backdropFilter: {
+			none: 'none',
+			blur: 'blur(15px)'
+		},
   		fontFamily: {
   			sportesia: ['sportesia', 'monospace'],
   			verminy: ['vermin1', 'monospace'],

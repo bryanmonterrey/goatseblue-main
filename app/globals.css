@@ -353,3 +353,8 @@ body {
     bottom: env(safe-area-inset-bottom);
   }
 }
+
+.backdrop-blur-custom {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}

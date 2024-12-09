@@ -66,7 +66,7 @@ import Image from 'next/image';
         {data.map((item, idx) => (
           item.href.startsWith('/') ? (
             <Link key={idx} href={item.href} className="block">
-              <DockItem className='aspect-square rounded-2xl bg-neutral-800'>
+              <DockItem className='aspect-square rounded-2xl bg-neutral-800/50 backdrop-blur-custom backdrop-filter backdrop-blur-lg'>
                 <DockLabel>{item.title}</DockLabel>
                 <DockIcon>{item.icon}</DockIcon>
               </DockItem>
@@ -77,7 +77,7 @@ import Image from 'next/image';
               onClick={() => handleExternalClick(item.href)}
               className="cursor-pointer"
             >
-              <DockItem className='aspect-square rounded-2xl bg-neutral-800'>
+              <DockItem className='aspect-square rounded-2xl bg-neutral-800/50 backdrop-blur-custom backdrop-filter backdrop-blur-lg'>
                 <DockLabel>{item.title}</DockLabel>
                 <DockIcon>{item.icon}</DockIcon>
               </DockItem>
