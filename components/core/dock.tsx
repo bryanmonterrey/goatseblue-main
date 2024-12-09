@@ -108,9 +108,9 @@ function Dock({
           mouseX.set(Infinity);
         }}
         className={cn(
-          'mx-auto flex w-fit gap-4 px-5 rounded-2xl bg-neutral-900',
-          className
-        )}
+            'mx-auto flex w-fit gap-2 md:gap-4 px-3 md:px-5 rounded-2xl bg-neutral-900',
+            className
+          )}
         style={{ height: panelHeight }}
         role='toolbar'
         aria-label='Application dock'
