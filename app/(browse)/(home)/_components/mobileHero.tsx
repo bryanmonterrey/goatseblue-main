@@ -310,7 +310,7 @@ const MobileHero = () => {
             <div className="flex items-center justify-center">
               <Link 
                 href="/g" 
-                className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-base transition-all duration-300"
+                className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
               >
                 /g/ - enter the $goatse singularity board
               </Link>
@@ -318,7 +318,7 @@ const MobileHero = () => {
             <div className="flex items-center justify-center">
             <Link 
               href="/buy" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-base transition-all duration-300"
+              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
               style={{ touchAction: 'manipulation' }}
             >
               buy $goatse here
@@ -327,7 +327,7 @@ const MobileHero = () => {
           <div className="flex items-center justify-center">
             <Link 
               href="https://terminal.goatse.app" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-base transition-all duration-300"
+              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
               style={{ touchAction: 'manipulation' }}
             >
               goatse terminal
@@ -336,7 +336,7 @@ const MobileHero = () => {
           <div className="flex items-center justify-center">
             <Link 
               href="https://terminal.goatse.app/conversations" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-base transition-all duration-300"
+              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
               style={{ touchAction: 'manipulation' }}
             >
               conversations
@@ -348,17 +348,17 @@ const MobileHero = () => {
           <div className='flex items-center justify-center min-h-screen bg-[#11111A] space-y-3 min-w-screen mb-10'>
             <div className='block space-y-7 items-center max-w-[85ch] justify-center'>
               <div className="block items-center space-y-7 text-center justify-center mx-auto">
-              <h1 className='text-3xl mx-auto font-medium text-center p-2'>Roadmap</h1>
-              <p ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near.</p>
+              <h1 className='text-2xl mx-auto font-medium text-center p-2'>Roadmap</h1>
+              <p className='text-xs' ref={addToRefs}>We don't know what the goatse singularity is, but we know that it is near.</p>
               </div>
               <Video src={movie} />
               <div className='flex items-center justify-center'>
-                <button onClick={handleCopy} className="copy-button text-center">
+                <button onClick={handleCopy} className="copy-button text-center text-xs">
                   ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
                 </button>
               </div>
               <div className='flex items-center justify-center'>
-                <p className='-mt-4'> click ca to copy address </p>
+                <p className='-mt-4 text-xs'> click ca to copy address </p>
               </div>
             </div>
           </div>
