@@ -61,7 +61,7 @@ import Image from 'next/image';
       };
     
     return (
-      <div className='absolute bottom-5 left-1/2 max-w-full -translate-x-1/2'>
+      <div className='absolute bottom-5 left-1/2 max-w-full -translate-x-1/2 z-[9999]'>
         <Dock className='items-end pb-3'>
         {data.map((item, idx) => (
           item.href.startsWith('/') ? (
