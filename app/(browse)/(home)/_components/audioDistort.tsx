@@ -210,7 +210,7 @@ const AudioReactive3D = ({ audioUrl }: AudioReactive3DProps) => {
           <button 
             onClick={handlePress}
             onTouchStart={handlePress}
-            className="hover:text-black text-black border hover:italic border-black px-4 py-1 rounded-none font-inter transition-all duration-300 flex items-center gap-2"
+            className="hover:text-white text-white border hover:italic border-white px-4 py-1 rounded-none font-inter transition-all duration-300 flex items-center gap-2"
           >
             Press Play
           </button>
