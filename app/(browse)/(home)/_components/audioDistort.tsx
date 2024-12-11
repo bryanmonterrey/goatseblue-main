@@ -88,16 +88,16 @@ const AudioReactive3D = ({ audioUrl }: AudioReactive3DProps) => {
       mountRef.current!.appendChild(rendererRef.current.domElement);
 
       // Lighting
-      const ambientLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1);
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-      directionalLight.position.set(0, 2, 0);
+      const ambientLight = new THREE.HemisphereLight(0xffffff, 0x444444, 2.5);
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 2.5);
+      directionalLight.position.set(0, 1, 0);
       sceneRef.current.add(ambientLight);
       sceneRef.current.add(directionalLight);
 
       // Load model
       const loader = new GLTFLoader();
       loader.load(
-        `${window.location.origin}/goatselight.glb`,
+        `${window.location.origin}/hornet.glb`,
         (gltf) => {
           modelRef.current = gltf.scene;
           
