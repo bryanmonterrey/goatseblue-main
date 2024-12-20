@@ -252,9 +252,7 @@ const MobileHero = () => {
             </div>
 
             <div className="absolute inset-0 flex items-center justify-center z-[1025]">
-              <div className="relative pt-10 w-full h-full flex items-center justify-center">
-                <AudioReactive3D audioUrl="/goatse.mp3" />
-              </div>
+              
             </div>
          
           </div>
