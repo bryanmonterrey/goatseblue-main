@@ -9,7 +9,7 @@ export default function Home() {
         <div className="min-h-screen w-full flex items-center justify-center p-4">
             <div className='absolute right-3 top-3 mb-6'>
             <Link href="/">
-                <Button className='border border-zinc-800 py-1 px-4 rounded-md text-white hover:text-white hover:italic font-inter mx-auto'>
+                <Button className='border bg-black border-zinc-800 py-1 px-4 rounded-md text-white hover:text-white hover:italic font-inter mx-auto'>
                     
                         back to Home
                     
