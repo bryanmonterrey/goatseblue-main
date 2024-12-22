@@ -266,7 +266,7 @@ const MobileHero = () => {
                   range={200}
                   
                 >
-               <div className="border-zinc-800 border-2 bg-black  hover:bg-[#ADBCF2] hover:border-[#ADBCF2] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+               <div className="border-zinc-800 border-2   hover:bg-[#ADBCF2] hover:border-[#ADBCF2] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
                 <Link href="https://terminal.goatse.app">
                   <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
                     
@@ -303,7 +303,7 @@ const MobileHero = () => {
                   range={200}
                   
                 >
-                <div className="border-zinc-800 bg-black hover:bg-[#0095FF] hover:border-[#0095FF] hover:text-[#11111A] transition-colors ease-in-out duration-500 border-2 rounded-lg p-4 text-white flex flex-col items-center">
+                <div className="border-zinc-800  hover:bg-[#0095FF] hover:border-[#0095FF] hover:text-[#11111A] transition-colors ease-in-out duration-500 border-2 rounded-lg p-4 text-white flex flex-col items-center">
                 <Link href="https://t.me/goatse_singularity">
                 <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
                     
@@ -321,7 +321,7 @@ const MobileHero = () => {
                   range={200}
                   
                 >
-                <div className="border-zinc-800 border-2 bg-black hover:bg-[#DDD4EB] hover:border-[#DDD4EB] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+                <div className="border-zinc-800 border-2  hover:bg-[#DDD4EB] hover:border-[#DDD4EB] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
                 <Link href="https://dexscreener.com/solana/9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump">
                 <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
                     
@@ -339,7 +339,7 @@ const MobileHero = () => {
                   range={200}
                   
                 >
-                <div className="border-zinc-800 border-2 bg-black hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+                <div className="border-zinc-800 border-2  hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
                 <Link href="/buy">
                 <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
                     
@@ -355,7 +355,7 @@ const MobileHero = () => {
                   range={200}
                   
                 >
-                <div className="border-zinc-800 border-2 bg-black hover:bg-[#482D54] hover:border-[#482D54] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+                <div className="border-zinc-800 border-2  hover:bg-[#482D54] hover:border-[#482D54] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
                   <Link href="/g">
                 <Button className=" text-white rounded-lg p-4 flex flex-col space-y-2">
                     
