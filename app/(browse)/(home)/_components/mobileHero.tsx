@@ -249,7 +249,7 @@ const MobileHero = () => {
             }}
           >
             <div className="w-full flex justify-between items-start z-[1059]">
-              <h1 className="w-full text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-inter tracking-tight text-white text-center pt-48">
+              <h1 className="w-full text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-inter tracking-tight text-white text-center pt-48 pb-10">
                 <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span><span className='font-lumen'> singularity</span>
               </h1>
             </div>
