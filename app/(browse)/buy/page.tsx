@@ -2,17 +2,19 @@
 
 import JupiterTerminal from "@/components/jupTerm";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Link } from 'next-view-transitions'
 
 export default function Home() {
     return (
         <div className="min-h-screen w-full flex items-center justify-center p-4">
             <div className='absolute right-3 top-3 mb-6'>
-                <Button className='border border-white py-1 px-4 rounded-none text-white hover:text-white hover:italic font-inter mx-auto'>
-                    <Link href="https://www.goatsesingularity.vip/">
+            <Link href="/">
+                <Button className='border border-zinc-800 py-1 px-4 rounded-md text-white hover:text-white hover:italic font-inter mx-auto'>
+                    
                         back to Home
-                    </Link>
+                    
                 </Button>
+                </Link>
             </div>
             <div className="block justify-center items-center">
                 <JupiterTerminal />

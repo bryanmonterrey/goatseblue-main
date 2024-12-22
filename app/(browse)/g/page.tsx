@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { validateFile } from '@/utils/file-validation'
 import { useToast } from '@/hooks/use-toast'
 import PostList from '@/components/PostList'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 
 export default function Home() {
   const router = useRouter()
@@ -94,11 +94,13 @@ export default function Home() {
     <main className="max-w-7xl mx-auto ">
     <div className="max-w-lg mx-auto p-4">
     <div className='absolute right-3 top-3 mb-6'>
-        <Button className='border border-white py-1 px-4 rounded-none text-white hover:text-white hover:italic font-inter mx-auto'>
-            <Link href="https://www.goatsesingularity.vip/">
+    <Link href="/">
+        <Button className='border border-zinc-800 py-1 px-4 rounded-md text-white hover:text-white hover:italic font-inter mx-auto'>
+            
                 back to Home
-            </Link>
+            
         </Button>
+        </Link>
         </div>
       <div className="mb-8 mx-auto mt-5">
         
