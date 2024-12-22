@@ -267,7 +267,7 @@ const MobileHero = () => {
                   
                 >
                <div className="border-zinc-800 border-2  hover:bg-[#ADBCF2] hover:border-[#ADBCF2] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
-                <Link href="/console">
+                <Link href="https://terminal.goatse.app">
                   <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
                     
                     console
@@ -449,10 +449,6 @@ const MobileHero = () => {
               </div>
             </div>
           </div>
-          <div className='flex items-center justify-center min-h-screen bg-[#11111A] space-y-3 min-w-screen mb-10 pb-44'>
-            <TweetGrid tweets={exampleTweets} />
-          </div>
-
           </div>
           
         </div>
