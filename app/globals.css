@@ -96,6 +96,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "sf";
+  src: url("/font/SFPRODISPLAYREGULAR.OTF"); 
+  font-weight: 400;
+}
+
 
 @import 'locomotive-scroll/dist/locomotive-scroll.css';
 
@@ -114,7 +120,7 @@
 body {
   color: var(--foreground);
   background: #11111A;
-  font-family: ia;
+  font-family: sf;
 }
 
 #jumbotron .title {

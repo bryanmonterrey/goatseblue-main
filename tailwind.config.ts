@@ -25,7 +25,7 @@ const config: Config = {
   			verminyv: ['verminV', 'monospace'],
         goatse: ['goatse', 'monospace'],
         courier: ['courier', 'monospace'],
-		inter: ['ia', 'monospace'],
+		inter: ['sf', 'monospace'],
 		english: ['english', 'monospace'],
 		bookish: ['bookish', 'monospace'],
 		lumen: ['lumen', 'monospace'],

@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import { metadata as pageMetadata } from './metadata';
 import ClientLayout from './layoutClient';
+import { ViewTransitions } from 'next-view-transitions'
 
 import "./globals.css";
 
@@ -9,6 +10,7 @@ export const metadata: Metadata = pageMetadata;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
+        <ViewTransitions>
         <html lang="en">
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -19,5 +21,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </ClientLayout>
             </body>
         </html>
+        </ViewTransitions>
     );
 }

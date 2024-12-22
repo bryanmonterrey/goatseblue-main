@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import NavMenu from '@/components/navMenu';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Link from 'next/link';
+import { Link } from 'next-view-transitions'
 import AudioReactive3D from './audioDistort';
 import ModelViewer from './ModelViewer';
 import Video from 'next-video';
@@ -11,6 +11,8 @@ import { toast } from '@/hooks/use-toast';
 import { TweetGrid } from '@/components/ui/tweet-grid';
 import LocomotiveScroll from 'locomotive-scroll';
 import { AppleStyleDock } from '@/components/applestyledock';
+import { Magnetic } from '@/components/core/magnetic';
+import { Button } from '@/components/ui/button';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -36,6 +38,7 @@ const MobileHero = () => {
     "1859767853916025101",
     "1859749795855990817",
   ]
+  const springOptions = { bounce: 0.1 };
 
   useEffect(() => {
     setIsMounted(true);
@@ -246,13 +249,124 @@ const MobileHero = () => {
             }}
           >
             <div className="w-full flex justify-between items-start z-[1059]">
-              <h1 className="w-full text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-inter tracking-tight text-white text-center pt-14">
+              <h1 className="w-full text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-inter tracking-tight text-white text-center pt-48">
                 <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span><span className='font-lumen'> singularity</span>
               </h1>
             </div>
 
             <div className="absolute inset-0 flex items-center justify-center z-[1025]">
-              
+            <div className="max-w-xs mx-auto space-y-4">
+              {/* Grid Section */}
+              <div className="grid grid-cols-2 gap-4">
+                {/* Spending Card - Full Width */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+               <div className="border-zinc-800 border-2  hover:bg-[#ADBCF2] hover:border-[#ADBCF2] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="/console">
+                  <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    console
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+                
+
+                {/* Card 1 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-800  hover:bg-[#FFFBF0] hover:border-[#FFFBF0] hover:text-[#11111A] transition-colors ease-in-out duration-500 border-2 col-span-1 rounded-lg p-4 text-white flex flex-col items-center">
+                  <Link href="https://x.com/goatse_singularity">
+                <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    twitter
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+
+                {/* Card 2 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-800  hover:bg-[#0095FF] hover:border-[#0095FF] hover:text-[#11111A] transition-colors ease-in-out duration-500 border-2 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="https://t.me/goatse_singularity">
+                <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    telegram
+                    </Button>
+                    </Link>
+                </div>
+                </Magnetic>
+
+                {/* Card 3 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-800 border-2  hover:bg-[#DDD4EB] hover:border-[#DDD4EB] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="https://dexscreener.com/solana/9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump">
+                <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    dexscreener
+                    </Button>
+                    </Link>
+                </div>
+                </Magnetic>
+
+                {/* Card 4 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-800 border-2  hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="/buy">
+                <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    buy
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-800 border-2  hover:bg-[#482D54] hover:border-[#482D54] transition-colors ease-in-out duration-500 rounded-lg p-4 text-white flex flex-col items-center">
+                  <Link href="/g">
+                <Button className=" text-white rounded-lg p-4 flex flex-col space-y-2">
+                    
+                /g/ board
+                    
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+              </div>
+            </div>
             </div>
          
           </div>
@@ -313,33 +427,8 @@ const MobileHero = () => {
                 /g/ - enter the $goatse singularity board
               </Link>
             </div>
-            <div className="flex items-center justify-center">
-            <Link 
-              href="/buy" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
-              style={{ touchAction: 'manipulation' }}
-            >
-              buy $goatse here
-            </Link>
-          </div>
-          <div className="flex items-center justify-center">
-            <Link 
-              href="https://terminal.goatse.app" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
-              style={{ touchAction: 'manipulation' }}
-            >
-              goatse terminal
-            </Link>
-          </div>
-          <div className="flex items-center justify-center">
-            <Link 
-              href="https://terminal.goatse.app/conversations" 
-              className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
-              style={{ touchAction: 'manipulation' }}
-            >
-              conversations
-            </Link>
-          </div>
+            
+          
           
           </div>
           </div>
