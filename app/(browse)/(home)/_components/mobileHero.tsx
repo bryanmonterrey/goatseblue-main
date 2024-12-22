@@ -285,7 +285,7 @@ const MobileHero = () => {
                   range={200}
                   
                 >
-                <div className="border-zinc-800 bg-black hover:bg-[#FFFBF0] hover:border-[#FFFBF0] hover:text-[#11111A] transition-colors ease-in-out duration-500 border-2 col-span-1 rounded-lg p-4 text-white flex flex-col items-center">
+                <div className="border-zinc-800 hover:bg-[#FFFBF0] hover:border-[#FFFBF0] hover:text-[#11111A] transition-colors ease-in-out duration-500 border-2 col-span-1 rounded-lg p-4 text-white flex flex-col items-center">
                   <Link href="https://x.com/goatse_singularity">
                 <Button className=" text-inherit rounded-lg p-4 flex flex-col space-y-2">
                     
