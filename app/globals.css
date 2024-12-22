@@ -102,6 +102,24 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "sf";
+  src: url("/font/SFPRODISPLAYMEDIUM.OTF"); 
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "sf";
+  src: url("/font/SFPRODISPLAYSEMIBOLD.OTF"); 
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "sf";
+  src: url("/font/SFPRODISPLAYBOLD.OTF"); 
+  font-weight: 700;
+}
+
 
 @import 'locomotive-scroll/dist/locomotive-scroll.css';
 
