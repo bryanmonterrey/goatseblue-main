@@ -423,7 +423,7 @@ const MobileHero = () => {
             <div className="flex items-center justify-center">
               <Link 
                 href="/g" 
-                className="bg-transparent text-white hover:text-white hover:italic font-inter border rounded-none border-white px-6 py-3 text-xs transition-all duration-300"
+                className="bg-[#0D0E15] text-zinc-50 hover:text-white hover:italic font-inter border rounded-md border-zinc-900 px-6 py-3 text-xs transition-all duration-300"
               >
                 /g/ - enter the $goatse singularity board
               </Link>
