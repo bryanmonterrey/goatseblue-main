@@ -13,10 +13,6 @@ import LocomotiveScroll from 'locomotive-scroll';
 import { AppleStyleDock } from '@/components/applestyledock';
 import { Magnetic } from '@/components/core/magnetic';
 import { Button } from '@/components/ui/button';
-import { AnimatePresence } from 'motion/react';
-import { motion } from 'motion/react';
-import { Cursor } from '@/components/ui/cursor';
-import { PlusIcon } from '@radix-ui/react-icons';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -43,31 +39,6 @@ const MobileHero = () => {
     "1859749795855990817",
   ]
   const springOptions = { bounce: 0.1 };
-  const refs = useRef<(HTMLDivElement | null)[]>([]); // Hold refs for multiple divs
-  const [isHovering, setIsHovering] = useState<Record<number, boolean>>({}); // Track hover state for each div
-
-  const handlePositionChange = (x: number, y: number) => {
-    // Determine hover state for each element
-    const hoverStates: Record<number, boolean> = {};
-    refs.current.forEach((ref, index) => {
-      if (ref) {
-        const rect = ref.getBoundingClientRect();
-        hoverStates[index] = x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
-      }
-    });
-
-    setIsHovering(hoverStates);
-  };
-
-
-  const cards = [
-    { href: "https://terminal.goatse.app", label: "console" },
-    { href: "https://x.com/goatse_singularity", label: "twitter" },
-    { href: "https://t.me/goatse_singularity", label: "telegram" },
-    { href: "https://dexscreener.com/solana/9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump", label: "dexscreener" },
-    { href: "/buy", label: "buy" },
-    { href: "/g", label: "/g/ board" },
-  ];
 
   useEffect(() => {
     setIsMounted(true);
@@ -245,45 +216,7 @@ const MobileHero = () => {
 
   return (
     <div className="fixed inset-0 w-full h-full bg-[#11111A] overflow-hidden" data-scroll-container>
-      <Cursor
-        attachToParent
-        variants={{
-          initial: { scale: 0.3, opacity: 0 },
-          animate: { scale: 1, opacity: 1 },
-          exit: { scale: 0.3, opacity: 0 },
-        }}
-        springConfig={{
-          bounce: 0.001,
-        }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 0.15,
-        }}
-        onPositionChange={handlePositionChange}
-      >
-        <motion.div
-          animate={{
-            width: Object.values(isHovering).some(Boolean) ? 80 : 16,
-            height: Object.values(isHovering).some(Boolean) ? 32 : 16,
-          }}
-          className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
-        >
-          <AnimatePresence>
-            {Object.values(isHovering).some(Boolean) && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.6 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.6 }}
-                className="inline-flex w-full items-center justify-center"
-              >
-                <div className="inline-flex items-center text-sm text-white dark:text-black">
-                  Enter <PlusIcon className="ml-1 h-4 w-4" />
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </motion.div>
-      </Cursor>
+      
       {/* Loading Screen */}
 
       {/* Scrollable Container */}
@@ -316,7 +249,7 @@ const MobileHero = () => {
               willChange: 'transform'
             }}
           >
-            <div className="w-full flex justify-center top-48 items-center z-[1059]">
+            <div className="w-full flex justify-between items-start z-[1059]">
               <h1 className="w-full text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-inter tracking-tight text-white text-center">
                 <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span><span className='font-lumen'> singularity</span>
               </h1>
@@ -326,31 +259,114 @@ const MobileHero = () => {
             <div className="max-w-xs mx-auto space-y-4">
               {/* Grid Section */}
               <div className="grid grid-cols-2 gap-4">
-        {cards.map((card, index) => (
-          <Magnetic
-          intensity={0.2}
+                {/* Spending Card - Full Width */}
+                <Magnetic
+                  intensity={0.2}
                   springOptions={springOptions}
                   actionArea='global'
                   range={200}
-          >
-          <div
-            key={index}
-            ref={(el) => {
-              refs.current[index] = el;
-            }}
-            className={`border-zinc-900 hover:cursor-none font-medium border-2 bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 rounded-lg p-4 text-white flex flex-col items-center ${
-              isHovering[index] ? "hover:bg-[#00FFA2]" : ""
-            }`}
-          >
-            <Link href={card.href} target="_blank" rel="noopener noreferrer">
-              <button className="text-inherit hover:cursor-none font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
-                {card.label}
-              </button>
-            </Link>
-          </div>
-          </Magnetic>
-        ))}
-      </div>
+                  
+                >
+               <div className="border-zinc-900 font-medium hover:cursor-pointer border-2 bg-[#0D0E15]   hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="https://terminal.goatse.app">
+                  <Button className=" text-inherit font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    console
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+                
+
+                {/* Card 1 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-900 font-medium hover:cursor-pointer bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 border-2 col-span-1 rounded-lg p-4 text-white flex flex-col items-center">
+                  <Link href="https://x.com/goatse_singularity">
+                <Button className=" text-inherit font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    twitter
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+
+                {/* Card 2 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-900 font-medium hover:cursor-pointer bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 border-2 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="https://t.me/goatse_singularity">
+                <Button className=" text-inherit font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    telegram
+                    </Button>
+                    </Link>
+                </div>
+                </Magnetic>
+
+                {/* Card 3 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-900 font-medium hover:cursor-pointer border-2 bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="https://dexscreener.com/solana/9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump">
+                <Button className=" text-inherit font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    dexscreener
+                    </Button>
+                    </Link>
+                </div>
+                </Magnetic>
+
+                {/* Card 4 */}
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-900 font-medium hover:cursor-pointer border-2 bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 rounded-lg p-4 text-white flex flex-col items-center">
+                <Link href="/buy">
+                <Button className=" text-inherit font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
+                    
+                    buy
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+                  
+                >
+                <div className="border-zinc-900 font-medium text-lg hover:cursor-pointer border-2 bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] transition-colors ease-in-out duration-300 rounded-lg p-4 text-white hover:text-[#11111A] flex flex-col items-center">
+                  <Link href="/g">
+                <Button className="text-inherit font-medium text-smrounded-lg p-4 flex flex-col space-y-2">
+                    
+                /g/ board
+                    
+                  </Button>
+                  </Link>
+                </div>
+                </Magnetic>
+              </div>
             </div>
             </div>
          
