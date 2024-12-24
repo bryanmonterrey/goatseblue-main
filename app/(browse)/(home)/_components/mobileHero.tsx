@@ -327,21 +327,28 @@ const MobileHero = () => {
               {/* Grid Section */}
               <div className="grid grid-cols-2 gap-4">
         {cards.map((card, index) => (
+          <Magnetic
+          intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea='global'
+                  range={200}
+          >
           <div
             key={index}
             ref={(el) => {
               refs.current[index] = el;
             }}
-            className={`border-zinc-900 font-medium border-2 bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 rounded-lg p-4 text-white flex flex-col items-center ${
+            className={`border-zinc-900 hover:cursor-none font-medium border-2 bg-[#0D0E15] hover:bg-[#00FFA2] hover:border-[#00FFA2] hover:text-[#11111A] transition-colors ease-in-out duration-300 rounded-lg p-4 text-white flex flex-col items-center ${
               isHovering[index] ? "hover:bg-[#00FFA2]" : ""
             }`}
           >
-            <a href={card.href} target="_blank" rel="noopener noreferrer">
-              <button className="text-inherit font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
+            <Link href={card.href} target="_blank" rel="noopener noreferrer">
+              <button className="text-inherit hover:cursor-none font-medium text-sm rounded-lg p-4 flex flex-col space-y-2">
                 {card.label}
               </button>
-            </a>
+            </Link>
           </div>
+          </Magnetic>
         ))}
       </div>
             </div>
