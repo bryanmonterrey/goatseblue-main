@@ -13,7 +13,9 @@ const config: Config = {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
   			azul: '#74FFCC',
-        darkblue: '#131020',
+        	darkblue: '#131020',
+        	darkblue2: '#0D0E15',
+			darkblue3: '#11111A',
   		},
 		  backdropFilter: {
 			none: 'none',

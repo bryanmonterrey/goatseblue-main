@@ -91,11 +91,11 @@ export default function Home() {
   }
 
   return (
-    <main className="max-w-7xl mx-auto ">
+    <main className="max-w-7xl mx-auto">
     <div className="max-w-lg mx-auto p-4">
     <div className='absolute right-3 top-3 mb-6'>
     <Link href="/">
-        <Button className='border border-zinc-800 py-1 px-4 rounded-md text-white hover:text-white hover:italic font-inter mx-auto'>
+        <Button className='border bg-darkblue2 border-zinc-800 py-1 px-4 rounded-md text-[#DDDDDD] hover:text-[#DDDDDD] hover:italic font-inter mx-auto'>
             
                 back to Home
             
@@ -104,51 +104,49 @@ export default function Home() {
         </div>
       <div className="mb-8 mx-auto mt-5">
         
-        <img
-          src="/goatsewhite.png"
-          alt="Goatse Singularity Board"
-          className="w-96 h-32 p-4 object-contain mx-auto"
-        />
-        <h1 className="text-2xl font-inter text-white mb-2 mx-auto">/g/ - Goatse Singularity Board</h1>
+      <h1 className="w-full text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-inter tracking-tight text-white text-center mb-4">
+                <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span><span className='font-lumen'> singularity</span>
+              </h1>
+        <h1 className="text-2xl font-inter text-[#DDDDDD] mb-2 mx-auto">/g/ - Goatse Singularity Board</h1>
         <p className="text-sm font-inter mx-auto">Enter the Goatse Singularity.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white text-black p-2 text-sm rounded-none font-inter">Name</label>
+          <label className="bg-[#DDDDDD] text-darkblue3 p-2 text-sm rounded-md font-inter">Name</label>
           <Input 
             type="text" 
             name="name" 
             required 
-            className="max-w-md font-inter border-white rounded-none"
+            className="max-w-md font-inter bg-darkblue2 border-zinc-800 rounded-md"
           />
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white rounded-none text-black p-2 text-sm font-inter">Subject</label>
+          <label className="bg-[#DDDDDD] rounded-md text-darkblue3 p-2 text-sm font-inter">Subject</label>
           <div className="flex gap-2 items-center max-w-md">
-            <Input type="text" name="subject" className='font-inter border-white rounded-none' />
-            <Button type="button" variant="outline" size="sm" className='rounded-none text-black font-inter'>
+            <Input type="text" name="subject" className='font-inter bg-darkblue2 border-zinc-800 rounded-md' />
+            <Button type="button" variant="outline" size="sm" className='rounded-md text-darkblue3 font-inter'>
               New Topic
             </Button>
           </div>
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-start">
-          <label className="bg-white text-black p-2 text-sm font-inter rounded-none">Comment</label>
+          <label className="bg-[#DDDDDD] text-darkblue3 p-2 text-sm font-inter rounded-md">Comment</label>
           <Textarea 
             name="comment" 
             required
-            className="min-h-[100px] font-inter resize-none rounded-none border-white"
+            className="min-h-[100px] font-inter resize-none rounded-md bg-darkblue2 border-zinc-800"
           />
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white rounded-none text-black p-2 text-sm font-inter">File</label>
+          <label className="bg-[#DDDDDD] rounded-md text-darkblue3 p-2 text-sm font-inter">File</label>
           <Input 
             type="file" 
             name="file"
-            className="max-w-md font-inter border-white rounded-none hover:cursor-pointer"
+            className="max-w-md font-inter bg-darkblue2 border-zinc-800 rounded-md hover:cursor-pointer"
             accept="image/*" // Add this to restrict to images only
             onChange={(e) => {
                 // Optional: Add client-side file validation
@@ -170,14 +168,14 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-          <label className="bg-white rounded-none text-black p-2 text-sm font-inter">Password</label>
+          <label className="bg-[#DDDDDD] rounded-md text-darkblue3 p-2 text-sm font-inter">Password</label>
           <div className="flex gap-2 items-center max-w-md">
             <Input 
               type="password" 
               name="password"
               placeholder='N)L$Ko$r'
               required
-              className="max-w-[200px] font-inter rounded-none border-white placeholder:text-gray-500"
+              className="max-w-[200px] font-inter bg-darkblue2 rounded-md border-zinc-800 placeholder:text-gray-500"
             />
             <span className="text-sm text-gray-500 font-inter">(For file deletion.)</span>
           </div>
@@ -185,7 +183,7 @@ export default function Home() {
 
         <Button 
           type="submit" 
-          className="ml-[108px] bg-white text-black hover:italic rounded-none py-1 px-6 font-inter"
+          className="ml-[108px] bg-[#DDDDDD] text-darkblue3 hover:italic rounded-md py-1 px-6 font-inter"
           disabled={uploading}
         >
           {uploading ? 'Posting...' : 'Post'}

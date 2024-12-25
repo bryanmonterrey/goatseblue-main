@@ -104,7 +104,7 @@ export function ReplyDialog({ postId, isOpen, onClose, onReplyCreated }: ReplyDi
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-[100px,1fr] gap-2 items-center">
-            <label className="bg-white text-black p-2 text-sm font-inter rounded-none">Name</label>
+            <label className="bg-white text-black p-2 text-sm font-inter rounded-md">Name</label>
             <Input
 
               type="text" 

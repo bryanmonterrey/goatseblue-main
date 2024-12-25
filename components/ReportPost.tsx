@@ -74,17 +74,17 @@ export function ReportPost({ postId }: ReportPostProps) {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="ml-2 bg-transparent border hover:text-white hover:bg-transparent border-white text-white rounded-none">
+        <Button variant="outline" size="sm" className="ml-2 bg-darkblue2 border hover:text-[#DDDDDD] hover:bg-transparent border-[#DDDDDD] text-[#DDDDDD] rounded-md">
           Report Post
         </Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className='rounded-xl'>
         <DialogHeader>
           <DialogTitle className='font-inter'>Report Post</DialogTitle>
         </DialogHeader>
         <Card className='bg-transparent border-none'>
           <CardHeader>
-            <CardTitle className="text-sm text-white font-inter">Why are you reporting this post?</CardTitle>
+            <CardTitle className="text-sm text-[#DDDDDD] font-inter">Why are you reporting this post?</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -92,21 +92,21 @@ export function ReportPost({ postId }: ReportPostProps) {
                 placeholder="Please provide details about why this post should be reviewed..."
                 value={reason}
                 onChange={(e) => setReason(e.target.value)}
-                className="min-h-[100px] rounded-lg border-white resize-none font-inter placeholder:font-inter placeholder:text-white text-white"
+                className="min-h-[100px] rounded-lg border-[#DDDDDD] resize-none font-inter placeholder:font-inter placeholder:text-[#DDDDDD] text-[#DDDDDD]"
               />
               <div className="flex justify-end gap-2">
                 <Button
                   variant="outline"
                   onClick={() => setIsOpen(false)}
                   disabled={isSubmitting}
-                  className='px-2 rounded-none font-inter '
+                  className='px-3 py-1 rounded-md font-inter '
                 >
                   Cancel
                 </Button>
                 <Button
                   onClick={handleSubmit}
                   disabled={isSubmitting || !reason.trim()}
-                  className='px-2 rounded-none text-black bg-white font-inter '
+                  className='px-3 py-1 rounded-md bg-white font-inter '
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Report'}
                 </Button>

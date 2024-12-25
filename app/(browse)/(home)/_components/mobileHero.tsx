@@ -258,7 +258,6 @@ const MobileHero = () => {
                 <span className='font-english'>g</span><span className='font-lumen'>o</span><span className='font-inter'>a</span><span className='font-inria'>t</span><span className='font-bookish'>s</span><span className='font-lumen'>e</span><span className='font-lumen'> singularity</span>
               </h1>
             </div>
-
             <div className="inset-0 flex items-center justify-center z-[1025]">
             <div className="max-w-xs mx-auto space-y-4">
               {/* Grid Section */}
@@ -277,8 +276,6 @@ const MobileHero = () => {
                   text="console"
                 />
                 </Magnetic>
-                
-
                 {/* Card 1 */}
                 <Magnetic
                   intensity={0.2}
@@ -292,7 +289,6 @@ const MobileHero = () => {
                   text="twitter"
                 />
                 </Magnetic>
-
                 {/* Card 2 */}
                 <Magnetic
                   intensity={0.2}
@@ -306,16 +302,13 @@ const MobileHero = () => {
                   icon={TelegramIcon}
                   text="telegram"
                 />
-
                 </Magnetic>
-
                 {/* Card 3 */}
                 <Magnetic
                   intensity={0.2}
                   springOptions={springOptions}
                   actionArea='global'
-                  range={200}
-                  
+                  range={200}                
                 >
                 <AnimatedLink 
                   href="https://dexscreener.com/solana/9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump"
@@ -323,14 +316,12 @@ const MobileHero = () => {
                   text="dexscreener"
                 />
                 </Magnetic>
-
                 {/* Card 4 */}
                 <Magnetic
                   intensity={0.2}
                   springOptions={springOptions}
                   actionArea='global'
-                  range={200}
-                  
+                  range={200}                 
                 >
                 <AnimatedLink 
                   href="/buy"
@@ -342,8 +333,7 @@ const MobileHero = () => {
                   intensity={0.2}
                   springOptions={springOptions}
                   actionArea='global'
-                  range={200}
-                  
+                  range={200}              
                 >
                 <AnimatedLink 
                   href="/g"
@@ -353,10 +343,8 @@ const MobileHero = () => {
                 </Magnetic>
               </div>
             </div>
-            </div>
-         
+            </div>  
           </div>
-
           {/* Scrollable Content */}
           <div className="absolute top-[100vh] w-full z-[1050]">
             <div className="min-h-screen bg-[#11111A] flex items-center justify-center py-20 rounded-t-2xl">
