@@ -30,6 +30,7 @@ const config: Config = {
 			bookish: ['bookish', 'monospace'],
 			lumen: ['lumen', 'monospace'],
 			inria: ['inria', 'monospace'],
+			geist: ['geist', 'monospace'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
