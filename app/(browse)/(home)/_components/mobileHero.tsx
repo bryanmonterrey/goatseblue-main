@@ -17,6 +17,7 @@ import AnimatedLink from '@/components/animatedcard';
 import { Inbox, ShoppingCart, Terminal, Twitter } from 'lucide-react';
 import { TelegramIcon } from '@/components/icons/TelegramIcon';
 import { DexScreenerIcon } from '@/components/icons/DexScreenerIcon';
+import { SnowEffect } from '@/components/snow';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -220,6 +221,7 @@ const MobileHero = () => {
 
   return (
     <div className="fixed inset-0 w-full h-full bg-[#11111A] overflow-hidden" data-scroll-container>
+      <SnowEffect />
       
       {/* Loading Screen */}
 
