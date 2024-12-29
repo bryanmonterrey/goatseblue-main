@@ -167,11 +167,11 @@ const textToCopy = '9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
   };
 
   return (
-    <motion.div style={{scale, rotate}} className="relative h-screen w-screen">
-        <div className='space-y-7 items-center  bg-[#11111A] rounded-2xl h-full w-full justify-center'>
+    <motion.div style={{scale, rotate}} className="relative h-screen w-screen rounded-2xl border-zinc-900 border-2">
+        <div className='space-y-7 items-center bg-[#11111A] rounded-2xl h-full w-full justify-center'>
             <div className='max-w-[60ch] h-full mx-auto space-y-7  my-auto flex flex-col items-center justify-center'>
               <div className="block items-center text-center justify-center mx-auto">
-              <h1 className='text-2xl mx-auto font-medium text-center p-2'>Roadmap</h1>
+              <h1 className='text-2xl mx-auto font-medium text-center'>Roadmap</h1>
               </div>
               <p className='text-sm text-center p-2'>we are a leader in the AI space and we are building an all in one desktop app and web app for everything AI. we want to provide the most luxury rich experience for our users. our software is built completely in house. some of our features will range from full autonomous trading via tasked based AI agents and full autonomous AI trading from our own AI model. Our web app is its own AI agent infrastructure already. we've done our research quite well and cant compromise the details of it but noone is doing it like us. we currently have the one of the best full stack software developers in the world, frontend and backend. we are building in public and may eventually release our software through resellable and easily transferable blockchain powered license keys so our AI economy isnt infiltrated with bad actors any longer. we believe in open source protocols but not if it requires possibly risking value for more virality and engagement, our product is user focused. ultimately, our end goal is AGI which hasnt been done yet.</p>
               <div className='flex flex-col items-center justify-center space-y-5'>
