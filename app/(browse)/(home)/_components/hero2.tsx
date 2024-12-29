@@ -1,12 +1,12 @@
 import React from 'react';
 import { useDeviceDetect } from '@/hooks/useDeviceDetect';
 import DesktopHero from './desktopHero';
-import MobileHero from './mobileHero';
+import Home from './lenis';
 
 const HeroSection = () => {
   const { isMobile } = useDeviceDetect();
 
-  return isMobile ? <MobileHero /> : <DesktopHero />;
+  return isMobile ? <Home /> : <Home />;
 };
 
 export default HeroSection;

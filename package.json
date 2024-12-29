@@ -41,6 +41,7 @@
     "framer-motion": "^10.18.0",
     "framer-motion-3d": "^11.11.4",
     "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
     "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.453.0",
     "motion": "^11.15.0",
