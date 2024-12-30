@@ -170,7 +170,7 @@ const textToCopy = '9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
     <motion.div style={{scale, rotate}} className="relative h-screen w-screen rounded-2xl border-zinc-900 border-2">
         <div className='space-y-7 items-center bg-[#11111A] rounded-2xl h-full w-full justify-center'>
             <div className='max-w-[60ch] h-full mx-auto space-y-4  my-auto flex flex-col items-center justify-center'>
-              <h1 className='text-2xl mx-auto font-medium text-[#00FFA2] text-center'>Who are we?</h1>
+              <h1 className='text-2xl mx-auto font-medium text-white text-center'>Who are we?</h1>
               <div className=''>
               <p className='text-base text-center p-2'>Goatse Singularity is redefining the AI space with an all-in-one desktop and web application offering a luxury-rich experience for everything AI. Built entirely in-house by some of the world’s top full-stack developers, our platform integrates cutting-edge AI agent infrastructure, autonomous trading with task-based agents, on-chain AI actions, and proprietary AI models for full autonomy.</p>
 
@@ -180,7 +180,7 @@ const textToCopy = '9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
 </div>
               <div className='flex flex-col items-center justify-center space-y-5'>
               <div className='flex items-center justify-center'>
-                <button onClick={handleCopy} className="copy-button text-[#00FFA2] text-center text-sm">
+                <button onClick={handleCopy} className="copy-button transition-all duration-300 hover:text-[#00FFA2] text-center text-sm">
                   ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
                 </button>
               </div>
