@@ -170,18 +170,22 @@ const textToCopy = '9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
     <motion.div style={{scale, rotate}} className="relative h-screen w-screen rounded-2xl border-zinc-900 border-2">
         <div className='space-y-7 items-center bg-[#11111A] rounded-2xl h-full w-full justify-center'>
             <div className='max-w-[60ch] h-full mx-auto space-y-7  my-auto flex flex-col items-center justify-center'>
-              <div className="block items-center text-center justify-center mx-auto">
-              <h1 className='text-2xl mx-auto font-medium text-center'>Roadmap</h1>
-              </div>
-              <p className='text-sm text-center p-2'>we are a leader in the AI space and we are building an all in one desktop app and web app for everything AI. we want to provide the most luxury rich experience for our users. our software is built completely in house. some of our features will range from full autonomous trading via tasked based AI agents and full autonomous AI trading from our own AI model. Our web app is its own AI agent infrastructure already. we've done our research quite well and cant compromise the details of it but noone is doing it like us. we currently have the one of the best full stack software developers in the world, frontend and backend. we are building in public and may eventually release our software through resellable and easily transferable blockchain powered license keys so our AI economy isnt infiltrated with bad actors any longer. we believe in open source protocols but not if it requires possibly risking value for more virality and engagement, our product is user focused. ultimately, our end goal is AGI which hasnt been done yet.</p>
+              <h1 className='text-2xl mx-auto font-medium text-[#00FFA2] text-center'>Who are we?</h1>
+              <div className=''>
+              <p className='text-base text-center p-2'>Goatse Singularity is redefining the AI space with an all-in-one desktop and web application offering a luxury-rich experience for everything AI. Built entirely in-house by some of the world’s top full-stack developers, our platform integrates cutting-edge AI agent infrastructure, autonomous trading with task-based agents, on-chain AI actions, and proprietary AI models for full autonomy.</p>
+
+<p className='text-base text-center p-2'>Our web app serves as its own AI agent ecosystem, backed by rigorous research and a commitment to excellence. While our methods are proprietary, it’s clear no one else comes close. To protect our user-centric platform, we are exploring blockchain-powered, resellable license keys to secure the AI economy from bad actors.</p>
+
+<p className='text-base text-center p-2'>Though we value open-source principles, we prioritize delivering real value over fleeting engagement. Our ultimate goal? Achieving AGI—a breakthrough yet to be realized. Goatse Singularity isn’t just software; it’s the future of AI.</p>
+</div>
               <div className='flex flex-col items-center justify-center space-y-5'>
               <div className='flex items-center justify-center'>
-                <button onClick={handleCopy} className="copy-button text-center text-xs">
+                <button onClick={handleCopy} className="copy-button text-[#00FFA2] text-center text-sm">
                   ca: 9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump
                 </button>
               </div>
               <div className='flex items-center justify-center'>
-                <p className='-mt-4 text-xs'> click ca to copy address </p>
+                <p className='-mt-4 text-sm'> click ca to copy address </p>
               </div>
               </div>
             </div>
