@@ -174,7 +174,7 @@ const textToCopy = '9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump';
               <div className=''>
               <p className='text-base text-center p-2'>Goatse Singularity is redefining the AI space with an all-in-one desktop and web application offering a luxury-rich experience for everything AI. Built entirely in-house by some of the world’s top full-stack developers, our platform integrates cutting-edge AI agent infrastructure, autonomous trading with task-based agents, on-chain AI actions, and proprietary AI models for full autonomy.</p>
 
-<p className='text-base text-center p-2'>Our web app serves as its own AI agent ecosystem, backed by rigorous research and a commitment to excellence. While our methods are proprietary, it’s clear no one else comes close. To protect our user-centric platform, we are exploring blockchain-powered, resellable license keys to secure the AI economy from bad actors.</p>
+<p className='text-base text-center p-2'>Our web app serves as its own AI agent ecosystem, backed by rigorous research and a commitment to excellence. While our methods are proprietary, it’s clear no one else comes close.</p>
 
 <p className='text-base text-center p-2'>Though we value open-source principles, we prioritize delivering real value over fleeting engagement. Our ultimate goal? Achieving AGI—a breakthrough yet to be realized. Goatse Singularity isn’t just software; it’s the future of AI.</p>
 </div>
