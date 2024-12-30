@@ -25,7 +25,7 @@ export default function JupiterTerminal() {
       window.Jupiter.init({
         displayMode: "integrated",
         integratedTargetId: terminalId,
-        endpoint: "https://mainnet.helius-rpc.com/?api-key=f09cbd78-a0f7-4b52-983c-71880b01240b",
+        endpoint: "https://mainnet.helius-rpc.com/?api-key=89acb127-21f1-48fd-a752-77abb2a7fd78",
         strictTokenList: false,
         formProps: {
           fixedOutputMint: true,
