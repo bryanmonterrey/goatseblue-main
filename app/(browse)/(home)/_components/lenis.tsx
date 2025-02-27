@@ -67,7 +67,7 @@ const Section1 = ({scrollYProgress}: { scrollYProgress: MotionValue<number> }) =
                   
                 >
                <AnimatedLink 
-                  href="https://terminal.goatse.app"
+                  href="https://console.goatse.app"
                   icon={Terminal}  // passing Twitter component as the icon prop
                   text="console"
                 />
